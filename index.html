@@ -184,7 +184,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-03-19 09:39:15 / Modified: 20:30:55" itemprop="dateCreated datePublished" datetime="2020-03-19T09:39:15+08:00">2020-03-19</time>
+              <time title="Created: 2020-03-19 09:39:15 / Modified: 22:55:45" itemprop="dateCreated datePublished" datetime="2020-03-19T09:39:15+08:00">2020-03-19</time>
             </span>
 
           
@@ -198,7 +198,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="第4章-功与能"><a href="#第4章-功与能" class="headerlink" title="第4章 功与能"></a>第4章 功与能</h1><h2 id="4-1-功"><a href="#4-1-功" class="headerlink" title="4.1 功"></a>4.1 功</h2><p>​        一个质点在力$F$的作用下，发生一无限小的元位移$\mathrm{d}r$时，力对质点做的功$\mathrm{d}A$定义为<strong>力$F$和位移$\mathbb{d}r$的标量积</strong>，即</p>
+          <p>本笔记参考自《大学物理学》（张三慧等著）</p>
+<h1 id="第4章-功与能"><a href="#第4章-功与能" class="headerlink" title="第4章 功与能"></a>第4章 功与能</h1><h2 id="4-1-功"><a href="#4-1-功" class="headerlink" title="4.1 功"></a>4.1 功</h2><p>​        一个质点在力$F$的作用下，发生一无限小的元位移$\mathrm{d}r$时，力对质点做的功$\mathrm{d}A$定义为<strong>力$F$和位移$\mathbb{d}r$的标量积</strong>，即</p>
 <script type="math/tex; mode=display">
 \mathrm{d}A=F\cdot \mathrm{d}r=F|\mathrm{d}r|\cos\varphi</script><p>式中$\varphi$是力$F$与元位移$\mathrm{d} r$之间的夹角。</p>
 <p>​        功是标量。没有方向有正负。</p>
@@ -257,7 +258,57 @@ E_k &= \sum\frac{1}{2}m_iv_i^2 = \sum\frac{1}{2}m_i(v_c+v_i')^2 \\
 \end{align*}</script><p>式子中右侧第一项表示质量等于质点系总质量的额一个质点以质心速度运动时的动能，叫质点系的<strong><u>轨道动能</u></strong>（或者说质心的动能），以$E_{kc}$表示；第二项中$\sum m_iv_i’ = \frac{\mathrm{d}}{\mathrm{d}t} \sum m_ir_i’ = m \frac{\mathrm{d}r_c’}{\mathrm{d}t}$。由于$r_c’$时质心在质心参考系中的位矢，它并不随时间变化，所以$\frac{\mathrm{d}r’_c}{\mathrm{d}t}=0$，而这第二项也就等于零；第三项是质点系相对于其质心参考系的总动能，叫做质点系的<strong><u>内动能</u></strong>，以$E_{k,in}$表示。这样，上式可以写成</p>
 <script type="math/tex; mode=display">
 E_k=E_{kc}+E_{k,in}</script><p>此式说明，一个质点系相对于某一惯性系的总动能等于该质点系的轨道动能和内动能之和，这一关系叫作<u><strong>柯尼希定理</strong></u>。实例之一时，一个篮球在空中运动时，其内部气体相对于地面的总动能等于其中气体分子的轨道动能和它们相对于这气体的质心的动能——内动能——之和。这气体的内动能也就是它的所有分子无规则运动的动能之和。</p>
-
+<h2 id="4-3-势能"><a href="#4-3-势能" class="headerlink" title="4.3 势能"></a>4.3 势能</h2><p>​        质量为$m$的物体在高度$h$处的重力势能为</p>
+<script type="math/tex; mode=display">
+E_p=mgh</script><p>对于重力势能这一概念，我们需要明确以下几点：</p>
+<ol>
+<li><p>重力是保守力，才能有重力势能的概念。重力做得功只决定于物体的位置（以高度表示）。重力势能是由其差按照下式规定的</p>
+<script type="math/tex; mode=display">
+A_g=-\Delta E_p = E_{pA} - E_{pB}</script><p>式中$A,B$分别代表重力做功的起点和终点。此式表明，重力做的功等于物体重力势能的减少。</p>
+</li>
+<li><p>重力势能的表示式要具有具体的数值，要求预先选定参考高度或称重力势能零点，在该高度时物体的重力势能为零。</p>
+</li>
+<li><p>由于重力是地球和物体之间的引力，所以重力势能应属于物体和地球这一系统，“物体的重力势能”只是一种简略的说法。</p>
+</li>
+<li><p>由于重力势能表示式中的$h$是地球和物体之间的相对距离的一种表示，所以<strong>重力势能的值相对于所选用的任一参考系都是一样的</strong>。</p>
+<p>​    弹簧的弹力也是保守力，弹簧的弹性势能：</p>
+</li>
+</ol>
+<script type="math/tex; mode=display">
+A_{cla}=\frac{1}{2}kx_A^2 - \frac{1}{2} kx_B^2</script><p>因此可以定义由弹簧的伸长量$x$所决定的物理量——弹簧的弹性势能。这一势能的差按下式定义：</p>
+<script type="math/tex; mode=display">
+A_{cla}=-\Delta E_p = E_{pA} - E_{pB}</script><p>弹簧的弹力做的功等于弹簧弹性势能的减少。弹性势能的表示式为</p>
+<script type="math/tex; mode=display">
+E_p = \frac{1}{2}kx^2</script><p>​        由以上，我们对于势能的概念需要了解以下几点：</p>
+<ol>
+<li><p>只有对保守力才能引入势能的概念，而且规定保守力做的功等于系统势能的减少，即</p>
+<script type="math/tex; mode=display">
+A_{AB} = -\Delta E_p = E_{pA} - E_{pB}</script></li>
+<li><p>势能的具体数值要求预先选定系统的某一位形位势能零点。</p>
+</li>
+<li><p>势能属于<strong>有保守力相互作用的系统整体</strong>（比如重力势能属于物体和地球）。</p>
+</li>
+<li><p>系统的势能与参考系<strong>无关</strong>。</p>
+<p>​    对于非保守力，例如摩擦力，不能引入势能概念。</p>
+</li>
+</ol>
+<h2 id="4-4-引力势能"><a href="#4-4-引力势能" class="headerlink" title="4.4 引力势能"></a>4.4 引力势能</h2><p>​        让我们先来证明万有引力是保守力。</p>
+<p>​        根据牛顿的引力定律，质量分别为$m_1$和$m_2$的两质点相距$r$时相互间引力的大小为</p>
+<script type="math/tex; mode=display">
+f=\frac{Gm_1m_2}{r^2}</script><p>方向沿两质点的连线。如图4.12所示。</p>
+<p><img src="/2020/03/19/physics_notes_1/image-20200319221447659.png" alt="image-20200319221447659"></p>
+<p>​        以$m_1$所在处为原点，当$m_2$由$A$点沿任意路径$C$移动到$B$点时，引力做的功为</p>
+<script type="math/tex; mode=display">
+A_{AB}=\int_{(A)}^{(B)}f\cdot\mathrm{d}r = \int_{(A)}^{(B)} \frac{Gm_1m_2}{r^2}|\mathrm{d}r|\cos \varphi</script><p>在图4.12中，径矢$OB’$和$OA’$长度之差为$B’C’=\mathrm{d}r$。由于$|\mathrm{d}r|$为微小长度，所以$OB’$和$OA’$可视为平行，因而$A’C’ \bot B’C’$，于是$|\mathrm{d}r|\cos\varphi = -|\mathrm{d}r|\cos\varphi’ = -\mathrm{d}r$。将此关系代入上式可得</p>
+<script type="math/tex; mode=display">
+A_{AB} = -\int_{r_A}^{r_B} \frac{Gm_1m_2}{r^2}\mathrm{d}r = \frac{Gm_1m_2}{r_B} - \frac{Gm_1m_2}{r_A}</script><p>这一结果说明引力的功只决定于两质点间的始末距离，而和移动的路径无关。所以，引力势保守力。</p>
+<p>​        由于引力势保守力，所以可以引入势能概念：两质点相距$r$时的引力势能公式为</p>
+<script type="math/tex; mode=display">
+E_p = -\frac{Gm_1m_2}{r}</script><p>​        在该式子中，当$r \to \infty$时， $E_p = 0$。由此可知引力势能的“零点”参考位形为两质点相距为无限远时。</p>
+<p>​        由于$m_1，m_2$都是正数，所以式子中的符号表示：两质点从相距$r$的位形改变到势能零点的过程中，引力总是做负功。引力势能属于$m_1$和$m_2$两质点系统。由于$r$是两质点间的距离，所以引力势能也就和参考系无关。</p>
+<h4 id="重力势能和引力势能的关系"><a href="#重力势能和引力势能的关系" class="headerlink" title="重力势能和引力势能的关系"></a>重力势能和引力势能的关系</h4><p>​        由于重力是引力的一个特例，所以重力势能公式就应该是引力势能公式的一个特例。让我们求质量为$m$的物体在地面上某一不大的高度$h$时，它和地球系统的引力势能。以$M$表示地球的质量，以$r$表示物体到地心的距离，则我们有</p>
+<script type="math/tex; mode=display">
+E_{pA} - E_{pB} = \frac</script>
       
     </div>
 
