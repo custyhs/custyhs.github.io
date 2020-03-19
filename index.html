@@ -184,7 +184,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-03-19 09:39:15 / Modified: 11:58:54" itemprop="dateCreated datePublished" datetime="2020-03-19T09:39:15+08:00">2020-03-19</time>
+              <time title="Created: 2020-03-19 09:39:15 / Modified: 17:36:36" itemprop="dateCreated datePublished" datetime="2020-03-19T09:39:15+08:00">2020-03-19</time>
             </span>
 
           
@@ -202,10 +202,33 @@
 <script type="math/tex; mode=display">
 \mathrm{d}A=F\cdot \mathrm{d}r=F|\mathrm{d}r|\cos\varphi</script><p>式中$\varphi$是力$F$与元位移$\mathrm{d} r$之间的夹角。</p>
 <p>​        功是标量。没有方向有正负。</p>
-<p>​        一般来说，质点可以是沿着曲线$L$运动，而且所受的力随质点的位置发生变化（如图）</p>
-<p><img src="/2020/03/19/physics_notes_1/image-20200319095741592.png" alt="image-20200319095741592"></p>
-<p>​    </p>
-
+<p>​        一般来说，质点可以是沿着曲线$L$运动，而且所受的力随质点的位置发生变化（如图4.1）</p>
+<p><img src="/2020/03/19/physics_notes_1/image-20200319095741592.png" alt="图4.1 力沿一段曲线做的功"></p>
+<p>在这种情况下，质点沿路径$L$从$A$点到$B$点力$F$对它做的功$A_{AB}$等于经过各段无限小元位移时力所做的功的总和，可以表示为</p>
+<script type="math/tex; mode=display">
+A_{AB}= \sideset{_L}{^{(B)}_{(A)}}\int\mathrm{d}A = \sideset{_L}{^{(B)}_{(A)}}\int F \cdot \mathrm{d}r</script><p>这一积分叫做力$F$沿路径$L$从$A$到$B$的<strong><u>线积分</u></strong>。</p>
+<p>​        比较简单的情况是质点沿直线运动：</p>
+<script type="math/tex; mode=display">
+A_{AB}=Fs_{AB}\cos \varphi</script><p>式子中$s_{AB}$是质点从$A$到$B$经过的位移的大小。</p>
+<p>​        功的量纲是$ML^2T^{-2}$，单位名为焦（耳），符号为$J$，</p>
+<script type="math/tex; mode=display">
+1\ \mathrm{J} = 1\ \mathrm{N}\cdot\mathrm{m}.</script><p>其他常见的功的非SI单位有尔格（$\mathrm{erg}$）、电子伏（$\mathrm{eV}$）。</p>
+<script type="math/tex; mode=display">
+1\ \mathrm{erg} = 10^{-7}\ \mathrm{J} \\
+1\ \mathrm{eV} = 1.6\times10^{-19}\ \mathrm{J}.</script><p>​        重力和弹力做的功都只决定于做工过程系统的始末位置或形状，而与过程的具体形式或路径无关。这种<strong>做工与路径无关，只决定于系统始末位置的力</strong>称为<strong><u>保守力</u></strong>。重力和弹力是保守力，摩擦力是非保守力。</p>
+<p>​        保守力的等价定义：<strong>如果力作用在物体上，当物体沿闭合路径移动一周时，力做的功为零</strong>。</p>
+<p>​        摩擦力事微观上的分子或原子间的电磁力的宏观表现。这些微观上的电磁力是保守力，但宏观上表现为非保守力。这是因为：<strong>滑动摩擦力的非保守性是根据宏观物体的运动判定的</strong>。一个金属块在桌面上滑动一圈，它的宏观位置复原了，但摩擦力做了功。这个微观上分子或原子间的相互作用是保守力并不矛盾。因为金属块回到了原来的位置，<strong>金属块中以及桌面上它滑动过的部分的所有分子或原子并没有回到原来的状态</strong>（包括位置和速度）。因此它们之间的微观上的保守力是做了功的。这个功在宏观上就表现为摩擦力做的功。在技术中我们总是采用宏观的观点来考虑问题，因此滑动摩擦力就是一种非保守力。与此类似，碰撞中引起永久形变的冲力以及爆炸力等也都是非保守力。</p>
+<h2 id="4-2-动能定理"><a href="#4-2-动能定理" class="headerlink" title="4.2 动能定理"></a>4.2 动能定理</h2><p>​        将牛顿第二定律公式代入功的定义式，可得</p>
+<script type="math/tex; mode=display">
+\mathrm{d}A=F\cdot\mathrm{d}r=F_t|\mathrm{d}r|=ma_t|\mathrm{d}r|</script><p>由于</p>
+<script type="math/tex; mode=display">
+a_t=\frac{\mathrm{d}v}{\mathrm{d}t},\ \ \ |\mathrm{d}r|=v\mathrm{d}t</script><p>所以</p>
+<script type="math/tex; mode=display">
+\mathrm{d}A=mv\mathrm{d}v=\mathrm{d}(\frac{1}{2}mv^2)</script><p>定义</p>
+<script type="math/tex; mode=display">
+E_k=\frac{1}{2}mv^2=\frac{p^2}{2m}</script><p>为质点在速度为$v$时的动能，则</p>
+<script type="math/tex; mode=display">
+\mathrm{d}A=\mathrm{d}E_k</script>
       
     </div>
 
@@ -238,7 +261,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2020/03/16/Test/" class="post-title-link" itemprop="url">Test</a>
+            <a href="/2020/03/16/Test/" class="post-title-link" itemprop="url">Reading Notes of Foundations of Data Science —— section 2</a>
         </h1>
 
         <div class="post-meta">
@@ -247,10 +270,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-03-16 19:01:17 / Modified: 20:36:30" itemprop="dateCreated datePublished" datetime="2020-03-16T19:01:17+08:00">2020-03-16</time>
+              <time title="Created: 2020-03-16 19:01:17" itemprop="dateCreated datePublished" datetime="2020-03-16T19:01:17+08:00">2020-03-16</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-03-19 12:07:26" itemprop="dateModified" datetime="2020-03-19T12:07:26+08:00">2020-03-19</time>
+              </span>
 
           
 
@@ -263,9 +292,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>Hello $\LaTeX$. It is a test of $\LaTeX$.</p>
-<h1 id="2-High-Dimensional-Space"><a href="#2-High-Dimensional-Space" class="headerlink" title="2 High-Dimensional Space"></a>2 High-Dimensional Space</h1><h2 id="2-1-Introduction"><a href="#2-1-Introduction" class="headerlink" title="2.1 Introduction"></a>2.1 Introduction</h2><p>​    High dimensional data has become very important, However, high dimensional space is very different from the two and three dimensional spaces we are familiar with. Generate $n$ points at random in $d$-dimensions where each coordinate is a zero mean, unit variance Gaussian. For sufficiently large $d$, with high probability the distances between all pairs of  points will be essentially the same. Also the volume of the unit ball in $d$-dimensions, the set of all points $\mathrm{x}$ such that $| \mathrm{x} |\leq1$, goes to zero as the dimension goes to infinity. The volume of a high dimensional unit ball is concentrated near its surface and is also concentrated at its equator. These properties have important consequences which we will consider.</p>
-<h2 id="2-2-The-Law-of-Large-Numbers"><a href="#2-2-The-Law-of-Large-Numbers" class="headerlink" title="2.2 The Law of Large Numbers"></a>2.2 The Law of Large Numbers</h2><p>​    If one generates random points in $d$-dimensional space using a Gaussian to generate coordinates, the distance between all pairs of points will be essentially the same when $d$ is large. The reason is that the square of distance between two points $\mathrm{y}$ and $\mathrm{z}$,</p>
+          <h1 id="High-Dimensional-Space"><a href="#High-Dimensional-Space" class="headerlink" title="High-Dimensional Space"></a>High-Dimensional Space</h1><h2 id="1-Introduction"><a href="#1-Introduction" class="headerlink" title="1 Introduction"></a>1 Introduction</h2><p>​    High dimensional data has become very important, However, high dimensional space is very different from the two and three dimensional spaces we are familiar with. Generate $n$ points at random in $d$-dimensions where each coordinate is a zero mean, unit variance Gaussian. For sufficiently large $d$, with high probability the distances between all pairs of  points will be essentially the same. Also the volume of the unit ball in $d$-dimensions, the set of all points $\mathrm{x}$ such that $| \mathrm{x} |\leq1$, goes to zero as the dimension goes to infinity. The volume of a high dimensional unit ball is concentrated near its surface and is also concentrated at its equator. These properties have important consequences which we will consider.</p>
+<h2 id="2-The-Law-of-Large-Numbers"><a href="#2-The-Law-of-Large-Numbers" class="headerlink" title="2 The Law of Large Numbers"></a>2 The Law of Large Numbers</h2><p>​    If one generates random points in $d$-dimensional space using a Gaussian to generate coordinates, the distance between all pairs of points will be essentially the same when $d$ is large. The reason is that the square of distance between two points $\mathrm{y}$ and $\mathrm{z}$,</p>
 <script type="math/tex; mode=display">
 |\mathrm{y}-\mathrm{z}|^2=\sum_{i=1}^{d}(y_i-z_i)^2,</script><p>can be viewed as the sum of d independent samples of a random variable $x$ that is distributed as the squared difference of two Gaussians. In particular, we are summing independent samples $x_i=(y_i-z_i)^2$ of a random variable $x$ of bounded variance. In such a case, a general bound known as the Law of Large Numbers states that with high probability, the average of the samples will be close to the expectation of the random variable. This in turn implies that with high probability, the sum is close to the sum’s expectation.</p>
 <p>​    Specifically, the Law of Large Numbers states that</p>
@@ -286,7 +314,7 @@ E(x)
 <p>​    Markov’s inequality bounds the tail of a distribution using only information about the mean. A tighter bound can be obtained by also using the variance of the random variable.</p>
 <p><strong>Theorem 2.3 (Chebyshev’s inequality)</strong> <em>Let $x$ be a random variable. Then for $c&gt;0$,</em></p>
 <script type="math/tex; mode=display">
-\mathrm{Prob}(|x-E(x)| \geq c) \leq \frac{Var(x)}{c^2}.</script><h2 id="2-7-Random-Projection-and-Johnson-Lindenstrauss-Lemma"><a href="#2-7-Random-Projection-and-Johnson-Lindenstrauss-Lemma" class="headerlink" title="2.7 Random Projection and Johnson-Lindenstrauss Lemma"></a>2.7 Random Projection and Johnson-Lindenstrauss Lemma</h2><p>​     One of the most frequently used subroutines in tasks involving high dimensional data is nearest neighbor search. In nearest neighbor search we are given a database of $n$ points in $\mathbb{R}^d$ where $n$ and $d$ are usually large. The database can be preprocessed and sto    red in an efficient data structure. Thereafter, we are presented “query” points in $\mathbb{R}^d$ and are asked to find the nearest or approximately nearest database point to the query point. Since the number of queries is often large, the time to answer each query should be very small, ideally a small function of  $\log n$ and $\log d$, whereas preprocessing time could be larger, namely a polynomial function of $n$ and $d$. For this and other problems, dimension reduction, where one projects the database points to a $k$-dimensional space with $k \ll d$ (usually dependent on $\log d$) can be very useful so long as the relative distances between points are approximately preserved. We will see using the Gaussian Annulus Theorem that such a projection indeed exists and is simple.</p>
+\mathrm{Prob}(|x-E(x)| \geq c) \leq \frac{Var(x)}{c^2}.</script><h2 id="7-Random-Projection-and-Johnson-Lindenstrauss-Lemma"><a href="#7-Random-Projection-and-Johnson-Lindenstrauss-Lemma" class="headerlink" title="7 Random Projection and Johnson-Lindenstrauss Lemma"></a>7 Random Projection and Johnson-Lindenstrauss Lemma</h2><p>​     One of the most frequently used subroutines in tasks involving high dimensional data is nearest neighbor search. In nearest neighbor search we are given a database of $n$ points in $\mathbb{R}^d$ where $n$ and $d$ are usually large. The database can be preprocessed and sto    red in an efficient data structure. Thereafter, we are presented “query” points in $\mathbb{R}^d$ and are asked to find the nearest or approximately nearest database point to the query point. Since the number of queries is often large, the time to answer each query should be very small, ideally a small function of  $\log n$ and $\log d$, whereas preprocessing time could be larger, namely a polynomial function of $n$ and $d$. For this and other problems, dimension reduction, where one projects the database points to a $k$-dimensional space with $k \ll d$ (usually dependent on $\log d$) can be very useful so long as the relative distances between points are approximately preserved. We will see using the Gaussian Annulus Theorem that such a projection indeed exists and is simple.</p>
 <p>​    The projection $f : \mathbb{R}^d \to \mathbb{R}^k$ that we will examine (many related projections are known to work as well) is the following. Pick $k$ Gaussian vectors $u_1, u_2, \cdots u_k$ in $\mathbb{R}^d$ with unit-variance coordinates. For any vector $v$, define the projection $f(v)$ by:</p>
 <script type="math/tex; mode=display">
 f(v)=(u_1 \cdot v, u_2 \cdot v, \cdots, u_k \cdot v).</script><p>The projection $f(v)$ is the vector of dot products of $v$ with the $u_i$.. We will show that with high probability, $|f(v)| \approx \sqrt{k}|v|$. For any two vectors $v_1$ and $v_2$, $f(v_1 - v_2) = f(v_1) - f(v_2)$. Thus, to estimate the distance $|v_1 - v_2|$ between two vectors $v_1$ and $v_2$ in $\mathbb{R}^d$, it suffices to compute $|f(v_1) - f(v_2)|=|f(v_1 - v_2)|$ in the $k$-dimensional space since the factor of $\sqrt{k}$ is known and one can divide by it. The reason distances increase when we project to a lower dimensional space is that the vectors $u_i$ are not unit length. Also notice that the vectors $u_i$ are not orthogonal. If we had required them to be orthogonal, we would have lost statistical independence.</p>
@@ -448,7 +476,7 @@ Prob \bigg( \Big||f(v)|-\sqrt{k}|v| \Big| \geq \epsilon\sqrt{k}|v| \bigg) \leq 3
         </a>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">tags</span>
       </div>
   </nav>
