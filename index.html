@@ -184,7 +184,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-03-19 09:39:15 / Modified: 17:36:36" itemprop="dateCreated datePublished" datetime="2020-03-19T09:39:15+08:00">2020-03-19</time>
+              <time title="Created: 2020-03-19 09:39:15 / Modified: 20:30:55" itemprop="dateCreated datePublished" datetime="2020-03-19T09:39:15+08:00">2020-03-19</time>
             </span>
 
           
@@ -202,7 +202,7 @@
 <script type="math/tex; mode=display">
 \mathrm{d}A=F\cdot \mathrm{d}r=F|\mathrm{d}r|\cos\varphi</script><p>式中$\varphi$是力$F$与元位移$\mathrm{d} r$之间的夹角。</p>
 <p>​        功是标量。没有方向有正负。</p>
-<p>​        一般来说，质点可以是沿着曲线$L$运动，而且所受的力随质点的位置发生变化（如图4.1）</p>
+<p>​        一般来说，质点可以是沿着曲线$L$运动，而且所受的力随质点的位置发生变化（如图）</p>
 <p><img src="/2020/03/19/physics_notes_1/image-20200319095741592.png" alt="图4.1 力沿一段曲线做的功"></p>
 <p>在这种情况下，质点沿路径$L$从$A$点到$B$点力$F$对它做的功$A_{AB}$等于经过各段无限小元位移时力所做的功的总和，可以表示为</p>
 <script type="math/tex; mode=display">
@@ -228,7 +228,36 @@ a_t=\frac{\mathrm{d}v}{\mathrm{d}t},\ \ \ |\mathrm{d}r|=v\mathrm{d}t</script><p>
 <script type="math/tex; mode=display">
 E_k=\frac{1}{2}mv^2=\frac{p^2}{2m}</script><p>为质点在速度为$v$时的动能，则</p>
 <script type="math/tex; mode=display">
-\mathrm{d}A=\mathrm{d}E_k</script>
+\mathrm{d}A=\mathrm{d}E_k</script><p>考虑从$A$到$B$的路径积分，</p>
+<script type="math/tex; mode=display">
+\int_{(A)}^{(B)} \mathrm{d}A = \int_{v_A}^{v_B} \mathrm{d}(\frac{1}{2} m v^2)</script><p>可得</p>
+<script type="math/tex; mode=display">
+A_{AB}=\frac{1}{2}mv_B^2-\frac{1}{2}mv_a^2</script><p>或</p>
+<script type="math/tex; mode=display">
+A_{AB}=E_{kB}-E_{kA}</script><p>式中$v_A$和$v_B$分别是质点经过$A$和$B$时的速率，而$E_{kA}$和$E_{kB}$分别是相应时刻质点的动能。</p>
+<p>​        上面的式子表明：合外力对质点做的功要改变质点的动能，而功的数值就等于质点动能的增量（考虑正负），或者说力对质点做的功时质点功能改变的<strong><u>量度</u></strong>。这个结论称作<u><strong>动能定理</strong></u>，它时牛顿定律的直接推论。</p>
+<p>​        现在考虑由两个有相互作用的质点组成的质点系的动能变化和他们受的力所做的功的关系（一对力的功）。</p>
+<p>​        如图 4.9 所示，以$m_1,m_2$分别表示两质点的质量，以$f_1,f_2$和$F_1,F_2$分别表示它们所受的内力和外力，以$v_{1A},v_{2A}$和$v_{1B},v_{2B}$分别表示它们在起始状态和终了状态的速度。</p>
+<p><img src="/2020/03/19/physics_notes_1/image-20200319200148935.png" alt="图4.9"></p>
+<p>由动能定理</p>
+<script type="math/tex; mode=display">
+\int_{(A_1)}^{(B_1)}(F_1+f_1) \cdot \mathrm{d}r_1=\int_{(A_1)}^{(B_1)} F_1 \cdot \mathrm{d}r_1+\int_{(A_1)}^{(B_1)} f_1 \cdot \mathrm{d}r_1 = \frac{1}{2}m_1v_{1B}^2 - \frac{1}{2}m_1v_{1A}^2</script><script type="math/tex; mode=display">
+\int_{(A_2)}^{(B_2)}(F_2+f_2) \cdot \mathrm{d}r_2=\int_{(A_2)}^{(B_2)} F_2 \cdot \mathrm{d}r_2+\int_{(A_2)}^{(B_2)} f_2 \cdot \mathrm{d}r_2 = \frac{1}{2}m_2v_{2B}^2 - \frac{1}{2}m_2v_{2A}^2</script><p>两式相加</p>
+<script type="math/tex; mode=display">
+\int_{(A_1)}^{(B_1)} F_1 \cdot \mathrm{d}r_1+\int_{(A_2)}^{(B_2)} F_2 \cdot \mathrm{d}r_2 + \int_{(A_1)}^{(B_1)} f_1 \cdot \mathrm{d}r_1+\int_{(A_2)}^{(B_2)} f_2 \cdot \mathrm{d}r_2 \\
+= \frac{1}{2}m_1v_{1B}^2 + \frac{1}{2}m_2v_{2B}^2 - (\frac{1}{2}m_1v_{1A}^2 + \frac{1}{2}m_2v_{2A}^2)</script><p>这个式子中等号左侧前两项时外力对质点系所做工之和，用$A_{ex}$表示。等号左侧后两项时质点系内力所做的功之和，用$A_{in}$表示。等号右侧时质点系总动能的增量，可以写成$E_{kB}-E_{kA}$。这样我们有</p>
+<script type="math/tex; mode=display">
+A_{ex} + A_{in} = E_{kB} - E_{kA}</script><p>这就是说，<strong>所有外力对质点系做的功和内力对质点系做的功之和等于质点系总动能的增量</strong>。这一结论很明显地可以推广到由多个质点组成的质点系，他就是用于质点系的动能定理</p>
+<p>​        <strong><em>注意</em></strong>：系统内力的功之和可以不为零，因而可以改变系统的总动能。<strong>内力能改变系统的总动能，但不能改变系统的总动量</strong>。</p>
+<p>​        一个质点系的动能，常常相对于其<strong><u>质心参考系</u></strong>（即质心在其中静止的参考系）加以计算。以$v_i$表示第$i$个质点相对于某一惯性系的速度，以$v_i’$表示该质点相对于质心参考系的速度，以$v_c$表示质心相对于惯性系的速度，则由于$v_i=v_i’+v_c$，故相对于惯性系，质点系的总动能应该为</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+E_k &= \sum\frac{1}{2}m_iv_i^2 = \sum\frac{1}{2}m_i(v_c+v_i')^2 \\
+&= \frac{1}{2}mv_c^2 + v_c\sum m_iv_i' + \sum \frac{1}{2}m_iv_i'^2
+\end{align*}</script><p>式子中右侧第一项表示质量等于质点系总质量的额一个质点以质心速度运动时的动能，叫质点系的<strong><u>轨道动能</u></strong>（或者说质心的动能），以$E_{kc}$表示；第二项中$\sum m_iv_i’ = \frac{\mathrm{d}}{\mathrm{d}t} \sum m_ir_i’ = m \frac{\mathrm{d}r_c’}{\mathrm{d}t}$。由于$r_c’$时质心在质心参考系中的位矢，它并不随时间变化，所以$\frac{\mathrm{d}r’_c}{\mathrm{d}t}=0$，而这第二项也就等于零；第三项是质点系相对于其质心参考系的总动能，叫做质点系的<strong><u>内动能</u></strong>，以$E_{k,in}$表示。这样，上式可以写成</p>
+<script type="math/tex; mode=display">
+E_k=E_{kc}+E_{k,in}</script><p>此式说明，一个质点系相对于某一惯性系的总动能等于该质点系的轨道动能和内动能之和，这一关系叫作<u><strong>柯尼希定理</strong></u>。实例之一时，一个篮球在空中运动时，其内部气体相对于地面的总动能等于其中气体分子的轨道动能和它们相对于这气体的质心的动能——内动能——之和。这气体的内动能也就是它的所有分子无规则运动的动能之和。</p>
+
       
     </div>
 
