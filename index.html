@@ -182,10 +182,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-03-19 09:39:15 / Modified: 22:55:45" itemprop="dateCreated datePublished" datetime="2020-03-19T09:39:15+08:00">2020-03-19</time>
+              <time title="Created: 2020-03-19 09:39:15" itemprop="dateCreated datePublished" datetime="2020-03-19T09:39:15+08:00">2020-03-19</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-03-20 00:32:02" itemprop="dateModified" datetime="2020-03-20T00:32:02+08:00">2020-03-20</time>
+              </span>
 
           
 
@@ -308,7 +314,18 @@ E_p = -\frac{Gm_1m_2}{r}</script><p>​        在该式子中，当$r \to \inft
 <p>​        由于$m_1，m_2$都是正数，所以式子中的符号表示：两质点从相距$r$的位形改变到势能零点的过程中，引力总是做负功。引力势能属于$m_1$和$m_2$两质点系统。由于$r$是两质点间的距离，所以引力势能也就和参考系无关。</p>
 <h4 id="重力势能和引力势能的关系"><a href="#重力势能和引力势能的关系" class="headerlink" title="重力势能和引力势能的关系"></a>重力势能和引力势能的关系</h4><p>​        由于重力是引力的一个特例，所以重力势能公式就应该是引力势能公式的一个特例。让我们求质量为$m$的物体在地面上某一不大的高度$h$时，它和地球系统的引力势能。以$M$表示地球的质量，以$r$表示物体到地心的距离，则我们有</p>
 <script type="math/tex; mode=display">
-E_{pA} - E_{pB} = \frac</script>
+E_{pA} - E_{pB} = \frac{GmM}{r_B} - \frac{GmM}{r_A}</script><p><img src="/2020/03/19/physics_notes_1/image-20200319230726573.png" alt="image-20200319230726573"></p>
+<p><strong>以物体在地球表面上时为势能零点</strong>，即规定$r_B=R$（地球半径）时，$E_{pB}=0$，则由上式可得物体在地面以上其他高度时的势能为</p>
+<script type="math/tex; mode=display">
+E_{pA} = \frac{GmM}{R} - \frac{GmM}{r_A}</script><p>物体在地面以上的高度为$h$时，$r_a = R + h$，这时</p>
+<script type="math/tex; mode=display">
+E_{pA} = \frac{GmM}{R} - \frac{GmM}{R + h} = GmM(\frac{1}{R} - \frac{1}{R + h}) = GmM\frac{h}{R(R + h)}</script><p>设$h \ll R$，则$R(R + h) \approx R^2$，因而有</p>
+<script type="math/tex; mode=display">
+E_{pA} = \frac{GmMh}{R^2}</script><p>由于在地面附近，重力加速度$g =\frac{GM}{R^2}$， 所以最后得到物体在地面上高度$h$处时重力势能为（去掉下标$A$）</p>
+<script type="math/tex; mode=display">
+E_p = mgh</script><p>这是我们熟知的重力势能。注意它和引力势能公式在势能零点选择上的不同。</p>
+<p>​        重力势能的势能曲线其实是引力势能曲线在零点附近的放大（呈现近似线性）。</p>
+
       
     </div>
 
