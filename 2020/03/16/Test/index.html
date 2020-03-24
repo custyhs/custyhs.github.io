@@ -28,7 +28,7 @@
 <meta property="og:description" content="High-Dimensional Space1 Introduction​    High dimensional data has become very important, However, high dimensional space is very different from the two and three dimensional spaces we are familiar wi">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-03-16T11:01:17.000Z">
-<meta property="article:modified_time" content="2020-03-19T04:07:26.853Z">
+<meta property="article:modified_time" content="2020-03-24T13:18:36.199Z">
 <meta property="article:author" content="custyhs">
 <meta property="article:tag" content="notes">
 <meta property="article:tag" content="Foundations of Data Science">
@@ -195,7 +195,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-03-19 12:07:26" itemprop="dateModified" datetime="2020-03-19T12:07:26+08:00">2020-03-19</time>
+                <time title="Modified: 2020-03-24 21:18:36" itemprop="dateModified" datetime="2020-03-24T21:18:36+08:00">2020-03-24</time>
               </span>
 
           
@@ -210,6 +210,7 @@
 
       
         <h1 id="High-Dimensional-Space"><a href="#High-Dimensional-Space" class="headerlink" title="High-Dimensional Space"></a>High-Dimensional Space</h1><h2 id="1-Introduction"><a href="#1-Introduction" class="headerlink" title="1 Introduction"></a>1 Introduction</h2><p>​    High dimensional data has become very important, However, high dimensional space is very different from the two and three dimensional spaces we are familiar with. Generate $n$ points at random in $d$-dimensions where each coordinate is a zero mean, unit variance Gaussian. For sufficiently large $d$, with high probability the distances between all pairs of  points will be essentially the same. Also the volume of the unit ball in $d$-dimensions, the set of all points $\mathrm{x}$ such that $| \mathrm{x} |\leq1$, goes to zero as the dimension goes to infinity. The volume of a high dimensional unit ball is concentrated near its surface and is also concentrated at its equator. These properties have important consequences which we will consider.</p>
+<a id="more"></a>
 <h2 id="2-The-Law-of-Large-Numbers"><a href="#2-The-Law-of-Large-Numbers" class="headerlink" title="2 The Law of Large Numbers"></a>2 The Law of Large Numbers</h2><p>​    If one generates random points in $d$-dimensional space using a Gaussian to generate coordinates, the distance between all pairs of points will be essentially the same when $d$ is large. The reason is that the square of distance between two points $\mathrm{y}$ and $\mathrm{z}$,</p>
 <script type="math/tex; mode=display">
 |\mathrm{y}-\mathrm{z}|^2=\sum_{i=1}^{d}(y_i-z_i)^2,</script><p>can be viewed as the sum of d independent samples of a random variable $x$ that is distributed as the squared difference of two Gaussians. In particular, we are summing independent samples $x_i=(y_i-z_i)^2$ of a random variable $x$ of bounded variance. In such a case, a general bound known as the Law of Large Numbers states that with high probability, the average of the samples will be close to the expectation of the random variable. This in turn implies that with high probability, the sum is close to the sum’s expectation.</p>
