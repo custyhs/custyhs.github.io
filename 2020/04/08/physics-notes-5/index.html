@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="广义相对论——爱因斯坦的引力理论 物质告诉时空如何弯曲，时空告诉物质如何运动 —— John Archibald Wheeler  广义相对论的两条基本原理狭义相对论的局限性无法在引力场中写出满足相对论假设的运动方程 等效原理惯性质量与引力质量最早由伽利略于1591年发现和提出 根据牛顿第二定律定义的质量叫做惯性质量  F &#x3D; m_i a, \qquad m_i是惯性大小的量度根据万有引力定义的质">
+<meta property="og:type" content="article">
+<meta property="og:title" content="physics_note_4">
+<meta property="og:url" content="http://yoursite.com/2020/04/08/physics-notes-5/index.html">
+<meta property="og:site_name" content="「 」">
+<meta property="og:description" content="广义相对论——爱因斯坦的引力理论 物质告诉时空如何弯曲，时空告诉物质如何运动 —— John Archibald Wheeler  广义相对论的两条基本原理狭义相对论的局限性无法在引力场中写出满足相对论假设的运动方程 等效原理惯性质量与引力质量最早由伽利略于1591年发现和提出 根据牛顿第二定律定义的质量叫做惯性质量  F &#x3D; m_i a, \qquad m_i是惯性大小的量度根据万有引力定义的质">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-04-08T01:56:35.000Z">
+<meta property="article:modified_time" content="2020-04-08T02:57:00.905Z">
+<meta property="article:author" content="custyhs">
+<meta property="article:tag" content="physics">
+<meta property="article:tag" content="notes">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://yoursite.com/2020/04/08/physics-notes-5/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true
+  };
+</script>
+
+  <title>physics_note_4 | 「 」</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">「 」</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/08/physics-notes-5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="custyhs">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="「 」">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          physics_note_4
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2020-04-08 09:56:35 / Modified: 10:57:00" itemprop="dateCreated datePublished" datetime="2020-04-08T09:56:35+08:00">2020-04-08</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="广义相对论——爱因斯坦的引力理论"><a href="#广义相对论——爱因斯坦的引力理论" class="headerlink" title="广义相对论——爱因斯坦的引力理论"></a>广义相对论——爱因斯坦的引力理论</h1><blockquote>
+<p>物质告诉时空如何弯曲，时空告诉物质如何运动 —— John Archibald Wheeler</p>
+</blockquote>
+<h2 id="广义相对论的两条基本原理"><a href="#广义相对论的两条基本原理" class="headerlink" title="广义相对论的两条基本原理"></a>广义相对论的两条基本原理</h2><h3 id="狭义相对论的局限性"><a href="#狭义相对论的局限性" class="headerlink" title="狭义相对论的局限性"></a>狭义相对论的局限性</h3><p>无法在引力场中写出满足相对论假设的运动方程</p>
+<h3 id="等效原理"><a href="#等效原理" class="headerlink" title="等效原理"></a>等效原理</h3><h4 id="惯性质量与引力质量"><a href="#惯性质量与引力质量" class="headerlink" title="惯性质量与引力质量"></a>惯性质量与引力质量</h4><p>最早由伽利略于1591年发现和提出</p>
+<p>根据牛顿第二定律定义的质量叫做<strong>惯性质量</strong></p>
+<script type="math/tex; mode=display">
+F = m_i a, \qquad m_i是惯性大小的量度</script><p>根据万有引力定义的质量叫做<strong>引力质量</strong></p>
+<script type="math/tex; mode=display">
+F = G \frac{M}{r^2}m_g = g m_g, \qquad m_g是产生和接受引力的能力</script><p>爱因斯坦认为两种质量是等效的</p>
+<script type="math/tex; mode=display">
+m_g = m_i</script><p>即在引力场中自由飞行的物体，其加速度$\vec{a}$必定等于当地的引力强度$\vec{g}$</p>
+<p><em>问题：</em>能否找到一个消除引力的真正的惯性参考系</p>
+<p><strong>在非惯性系中引入惯性力后，可以应用力学定律</strong></p>
+<h4 id="爱因斯坦假想实验（爱因斯坦电梯）"><a href="#爱因斯坦假想实验（爱因斯坦电梯）" class="headerlink" title="爱因斯坦假想实验（爱因斯坦电梯）"></a>爱因斯坦假想实验（爱因斯坦电梯）</h4><p>1、惯性力与引力的效应相同。</p>
+<p>2、可以在引力场中的任何一个时空点（局部区域）找到一个在该引力场中自由下落的惯性系——局部<strong>惯性系</strong></p>
+<h4 id="广义相对论的等效原理"><a href="#广义相对论的等效原理" class="headerlink" title="广义相对论的等效原理"></a>广义相对论的等效原理</h4><p>局域内加速参考系形成的物理效应与引力场的一切物理效应等效。即一个均匀的引力场与一个匀加速参考系完全等价。</p>
+<p>在局部惯性系内可以将引力消除，但其他力没有这样的性质！例如：不能依靠选择参考系来消除电磁力。“引力的本质就是没有引力”。</p>
+<h3 id="广义相对论原理"><a href="#广义相对论原理" class="headerlink" title="广义相对论原理"></a>广义相对论原理</h3><h4 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h4><p>物理规律是否会受到加速参考系的影响？即非惯性系与惯性系是否平权？</p>
+<h4 id="广义相对性原理"><a href="#广义相对性原理" class="headerlink" title="广义相对性原理"></a>广义相对性原理</h4><p>一切参考系都是平权的，物理规律具有适合于任何参考系的性质，即物理规律在一切参考系中可以表达为相同的形式。</p>
+<h2 id="引力场的时空弯曲"><a href="#引力场的时空弯曲" class="headerlink" title="引力场的时空弯曲"></a>引力场的时空弯曲</h2><h3 id="引力场中光线的弯曲"><a href="#引力场中光线的弯曲" class="headerlink" title="引力场中光线的弯曲"></a>引力场中光线的弯曲</h3><p>在加速参考系中看到的光线是弯曲的.$\to$ 均匀加速参考系等效于均匀引力场. $\to$ 引力使光线弯曲.</p>
+<p>通常我们没有感觉到光线弯曲：</p>
+<ol>
+<li>光速太快</li>
+<li>地球引力太小</li>
+</ol>
+<p>太阳的引力应该使恒星发出的光弯曲：</p>
+<ol>
+<li>白天：看不到星光</li>
+<li>晚上：星光灿烂，没有经过太阳的引力场</li>
+</ol>
+<p>日全食（有太阳引力，有星光）1919年5月29日的日全食证实了这一点。</p>
+<h3 id="弯曲空间的概念"><a href="#弯曲空间的概念" class="headerlink" title="弯曲空间的概念"></a>弯曲空间的概念</h3><p>广义相对论打破了我们头脑中固有的平直空间的概念。弯曲的空间中，欧几里得几何学不再适用。</p>
+<p><strong>测地线</strong>：即两点间距离的极值线</p>
+<p>用测量判定空间是否弯曲：平面中测地线是直线，球面中测地线是弧线。</p>
+<h3 id="引力场的空间弯曲"><a href="#引力场的空间弯曲" class="headerlink" title="引力场的空间弯曲"></a>引力场的空间弯曲</h3><p>以爱因斯坦转盘为例：考虑两个惯性系：$S$系：即实验室系；$S’$系：即与盘边缘$P’$相连的局部惯性系</p>
+<p>研究的问题：两个参考系中测量圆周长</p>
+<p>分别在两个参考系中测量圆盘半径：径向无相对运动$r = r’$</p>
+<p>分别在两个参考系中测量圆盘周长（尺子沿长度方向有速度$\to$收缩）</p>
+<p>由洛伦兹变换可得$l = l’ \sqrt{1 - \frac{r\omega}{c^2}}$,$l = 2\pi r$,$l’ &gt; 2\pi r’$</p>
+<p>结论：$S’$ 是非惯性系，存在惯性力场和引力场等效，等效的引力场强大小是$g = r\omega^2$。引力场使空间弯曲，场越强，弯曲越烈。</p>
+<h3 id="施瓦西场中固有时与真实距离"><a href="#施瓦西场中固有时与真实距离" class="headerlink" title="施瓦西场中固有时与真实距离"></a>施瓦西场中固有时与真实距离</h3><h4 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h4><h5 id="施瓦西场"><a href="#施瓦西场" class="headerlink" title="施瓦西场"></a>施瓦西场</h5><p>在远离请ita星球引力场的外部自由太空中，一个星球的外场</p>
+<h5 id="标准钟"><a href="#标准钟" class="headerlink" title="标准钟"></a>标准钟</h5><p>在无引力的地方由一系列走时完全一样的钟，然后把它们分别放在引力场中的各时空点——称为各地的标准钟</p>
+<h5 id="标准尺"><a href="#标准尺" class="headerlink" title="标准尺"></a>标准尺</h5><p>在无引力的地方由一系列的完全一样的刚性微分尺，然后把它们分别放在引力场中的各时空点——称为各地的标准尺</p>
+<h5 id="某处的固有时"><a href="#某处的固有时" class="headerlink" title="某处的固有时"></a>某处的固有时</h5><p>由静止在该处的标准钟测得的时间间隔</p>
+<h5 id="某处的真是距离"><a href="#某处的真是距离" class="headerlink" title="某处的真是距离"></a>某处的真是距离</h5><p>由静止在该处的标准尺测得的空间间隔</p>
+<h4 id="引力场中的固有时与真实距离"><a href="#引力场中的固有时与真实距离" class="headerlink" title="引力场中的固有时与真实距离"></a>引力场中的固有时与真实距离</h4><p>见讲义</p>
+<p>结论：</p>
+<ol>
+<li><p>天体引力场的强弱由$\frac{GM}{c^2r}$决定，一般天体危弱场，牛顿引力适用。</p>
+<script type="math/tex; mode=display">
+弱场条件: v = \sqrt{\frac{GM}{R}}\ll c, 即\frac{GM}{Rc^2}\ll 1.</script><script type="math/tex; mode=display">
+强场条件: \frac{GM}{Rc^2} \approx 1</script></li>
+<li><p>引力场愈强，钟愈慢，尺缩愈烈，时空弯曲愈烈</p>
+</li>
+<li>时空与物质分布紧密相关</li>
+</ol>
+<h2 id="宇宙的形状和命运"><a href="#宇宙的形状和命运" class="headerlink" title="宇宙的形状和命运"></a>宇宙的形状和命运</h2><p>宇宙的三种模型及未来预言</p>
+<p>星系光谱的红移现象：说明星系在退行，宇宙在膨胀</p>
+<p>宇宙的膨胀率$\gamma$和平均质量密度与某一临界密度的比值$\Omega$决定了宇宙的几何形状、宇宙的未来和命运</p>
+<script type="math/tex; mode=display">
+\Omega = \frac{平均质量密度}{临界质量密度}</script>
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/physics/" rel="tag"># physics</a>
+              <a href="/tags/notes/" rel="tag"># notes</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/03/25/physics-notes-4/" rel="prev" title="大学物理笔记——狭义相对论基础">
+      <i class="fa fa-chevron-left"></i> 大学物理笔记——狭义相对论基础
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#广义相对论——爱因斯坦的引力理论"><span class="nav-number">1.</span> <span class="nav-text">广义相对论——爱因斯坦的引力理论</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#广义相对论的两条基本原理"><span class="nav-number">1.1.</span> <span class="nav-text">广义相对论的两条基本原理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#狭义相对论的局限性"><span class="nav-number">1.1.1.</span> <span class="nav-text">狭义相对论的局限性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#等效原理"><span class="nav-number">1.1.2.</span> <span class="nav-text">等效原理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#惯性质量与引力质量"><span class="nav-number">1.1.2.1.</span> <span class="nav-text">惯性质量与引力质量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#爱因斯坦假想实验（爱因斯坦电梯）"><span class="nav-number">1.1.2.2.</span> <span class="nav-text">爱因斯坦假想实验（爱因斯坦电梯）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#广义相对论的等效原理"><span class="nav-number">1.1.2.3.</span> <span class="nav-text">广义相对论的等效原理</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#广义相对论原理"><span class="nav-number">1.1.3.</span> <span class="nav-text">广义相对论原理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#问题"><span class="nav-number">1.1.3.1.</span> <span class="nav-text">问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#广义相对性原理"><span class="nav-number">1.1.3.2.</span> <span class="nav-text">广义相对性原理</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#引力场的时空弯曲"><span class="nav-number">1.2.</span> <span class="nav-text">引力场的时空弯曲</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#引力场中光线的弯曲"><span class="nav-number">1.2.1.</span> <span class="nav-text">引力场中光线的弯曲</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#弯曲空间的概念"><span class="nav-number">1.2.2.</span> <span class="nav-text">弯曲空间的概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#引力场的空间弯曲"><span class="nav-number">1.2.3.</span> <span class="nav-text">引力场的空间弯曲</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#施瓦西场中固有时与真实距离"><span class="nav-number">1.2.4.</span> <span class="nav-text">施瓦西场中固有时与真实距离</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#基本概念"><span class="nav-number">1.2.4.1.</span> <span class="nav-text">基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#施瓦西场"><span class="nav-number">1.2.4.1.1.</span> <span class="nav-text">施瓦西场</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#标准钟"><span class="nav-number">1.2.4.1.2.</span> <span class="nav-text">标准钟</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#标准尺"><span class="nav-number">1.2.4.1.3.</span> <span class="nav-text">标准尺</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#某处的固有时"><span class="nav-number">1.2.4.1.4.</span> <span class="nav-text">某处的固有时</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#某处的真是距离"><span class="nav-number">1.2.4.1.5.</span> <span class="nav-text">某处的真是距离</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#引力场中的固有时与真实距离"><span class="nav-number">1.2.4.2.</span> <span class="nav-text">引力场中的固有时与真实距离</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#宇宙的形状和命运"><span class="nav-number">1.3.</span> <span class="nav-text">宇宙的形状和命运</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">custyhs</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/custyhs" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;custyhs" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">custyhs</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.2.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.7.2
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+</body>
+</html>
