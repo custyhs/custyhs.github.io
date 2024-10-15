@@ -1,8 +1,8 @@
 ---
 title: "uniINF: Best-of-Both-Worlds Algorithm for Parameter-Free Heavy-Tailed MABs"
-collection: preprints
+collection: publications
 category: preprints
-permalink: /publication/uniINF: Best-of-Both-Worlds Algorithm for Parameter-Free Heavy-Tailed MABs
+# permalink: /publication/uniINF: Best-of-Both-Worlds Algorithm for Parameter-Free Heavy-Tailed MABs
 # excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
 # date: 2009-10-01
 # venue: 'Journal 1'

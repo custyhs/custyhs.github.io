@@ -24,9 +24,9 @@ author:
   avatar           : "profile.png"
   name             : "Yu Chen"
   pronouns         : # example: "she/her"  
-  bio              : "I am a second-year Ph.D. student @ IIIS, Tsinghua."
-  location         : "Beijing, China"
-  employer         : "IIIS, Tsinghua University"
+  bio              : "Hi! I am a second-year Ph.D. student @ IIIS, Tsinghua."
+  location         : # "Beijing, China"
+  employer         : # "[IIIS, Tsinghua University](https://iiis.tsinghua.edu.cn/en/)"
   uri              : # URL
   email            : "chenyu23@mails.tsinghua.edu.cn" 
 
@@ -169,6 +169,7 @@ exclude:
   - config
   - Dockerfile
   - Gemfile
+  - Gemfile.lock
   - Gruntfile.js
   - gulpfile.js
   - LICENSE
@@ -180,6 +181,7 @@ exclude:
   - README
   - tmp
   - vendor
+  - $
 keep_files:
   - .git
   - .svn
