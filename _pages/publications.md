@@ -14,7 +14,7 @@ blue { color: Blue }
 
 For a complete list, please refer to my [Google Scholar profile](https://scholar.google.com/citations?user=rJ6Ipa0AAAAJ).  
 The publications are listed reverse chronologically.  
-(\* indicates equal contribution)
+\* indicates equal contribution
 
 <h2>Preprints</h2><hr />
 
@@ -36,7 +36,7 @@ The publications are listed reverse chronologically.
 
 - **[Multi-User Delay-Constrained Scheduling With Deep Recurrent Reinforcement Learning](https://ieeexplore.ieee.org/abstract/document/10431724)**
   <br>Pihe Hu, <b><blue>Yu Chen</blue></b>, Ling Pan, Zhixuan Fang, Fu Xiao, and Longbo Huang <br/>
-  *IEEE/ACM Transactions on Networking* <green>[TON]</green>, June 2024, doi: 10.1109/TNET.2024.3359911. [[PDF]](/files/Multi-User_Delay-Constrained_Scheduling_With_Deep_Recurrent_Reinforcement_Learning.pdf)
+  *IEEE/ACM Transactions on Networking* <green>[TON]</green>, 2024. [[PDF]](/files/Multi-User_Delay-Constrained_Scheduling_With_Deep_Recurrent_Reinforcement_Learning.pdf)
 
 - **[Provably Efficient Iterated CVaR Reinforcement Learning with Function Approximation and Human Feedback](https://openreview.net/forum?id=vW1SkPl4kp)**
   <br><b><blue>Yu Chen</blue></b>, Yihan Du, Pihe Hu, Siwei Wang, Desheng Wu, and Longbo Huang <br /> 
