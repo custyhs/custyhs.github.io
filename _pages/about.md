@@ -20,14 +20,5 @@ Prior to my Ph.D., I received my Bachelor's degree of Science from Tsinghua Univ
 My research interests lie broadly in understanding the modern machine learning, with a recent focus on reinforcement learning and bandits theory. I am very open to other topics, so feel free to reach out if you’d like to collaborate or chat!
 
 
-## Selected Awards
-- **China National Scholarship**(国家奖学金), by Ministry of Education of China, 2022.   
-  *Top scholarship in China, 2% domestically.*
-- **Xiao Qin Scholarship**, by Department of Mathematcs, Tsinghua University, 2022.   
-  *Recognition for the best student of each class in Department of Mathematcs, Tsinghua.*
-- **Tsinghua University Scholarship**, by Tsinghua University, three times 2020-2022.
-- **First Prize**(Beijing Area) in Contemporary Undergraduate Mathematical Contest in Modeling, by China Society for Industrial and Applied Mathematics, 2020.
-
-
-## Professional Services
+## Academic Services
 - **Conference Reviewing**: NeurIPS 2023, ICLR 2025/2024.
