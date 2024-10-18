@@ -8,14 +8,9 @@ main:
   - title: "Publications"
     url: /publications/
 
-  # - title: "Talks"
-  #   url: /talks/    
-        
-  # - title: "Blog Posts"
-  #   url: /year-archive/
   - title: "Awards"
     url: /awards/
-    
+
   - title: "Misc"
     url: /misc/
 
