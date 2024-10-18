@@ -18,7 +18,7 @@ Tsinghua, November 2021.
 </div>
 
 <div align="center">
-<img src="/images/misc/IMG_3055 2.JPG" width="75%" >
+<img src="/images/misc/IMG_3055.JPG" width="75%" >
 <br>
 Tsinghua, April 2023.
 </div>
