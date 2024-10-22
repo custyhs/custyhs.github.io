@@ -50,6 +50,6 @@ The publications are listed reverse chronologically.
   <br>Pihe Hu, Ling Pan, <b><blue>Yu Chen</blue></b>, Zhixuan Fang, and Longbo Huang <br /> 
   *Algorithmic Foundations, and Protocol Design for Mobile Networks and Mobile Computing* <green>[MobiHoc]</green>, 2022. [[PDF]](/files/3492866.3549712.pdf)
 
-- **[Nearly Minimax Optimal Reinforcement Learning with Linear Function Approximation](https://openreview.net/forum?id=U9HW6vyNClg)**
+- **[Nearly Minimax Optimal Reinforcement Learning with Linear Function Approximation](https://proceedings.mlr.press/v162/hu22a.html)**
   <br>Pihe Hu, <b><blue>Yu Chen</blue></b>, and Longbo Huang <br /> 
   *Proceedings of the 39th International Conference on Machine Learning* <green>[ICML]</green>, 2022. [[PDF]](/files/2206.11489v3.pdf)
