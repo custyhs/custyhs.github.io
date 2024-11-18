@@ -7,9 +7,6 @@ author_profile: false
 
 ## Photo Gallery
 ---
-These photos capture some moments of beauty. I hope they resonate with you as much as they do with me.  
-*<font color=grey>Camera: iPhone 12, iPhone 15 pro.</font>*
-
 <div align="center">
 <img src="/images/misc/IMG_0771.JPG" width="75%" >
 <br>

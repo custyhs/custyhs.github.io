@@ -10,8 +10,9 @@ orange { color: Orange }
 green { color: Green }
 blue { color: Blue }
 </style>
-
-- **China National Scholarship** (国家奖学金), by Ministry of Education of China, 2022.   
+- **China National Scholarship** (国家奖学金) for master student, by Ministry of Education of China, 2024.   
+  *<red>Top scholarship in China, 2% domestically.</red>*
+- **China National Scholarship** (国家奖学金) for undergraduate student, by Ministry of Education of China, 2022.   
   *<red>Top scholarship in China, 2% domestically.</red>*
 - **Xiao Qin Scholarship**, by Department of Mathematcs, Tsinghua University, 2022.   
   *Recognition for the <red>best student of each class</red> in Department of Mathematcs, Tsinghua.*
