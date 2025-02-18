@@ -22,7 +22,7 @@ The publications are listed reverse chronologically.
 
 - **[uniINF: Best-of-Both-Worlds Algorithm for Parameter-Free Heavy-Tailed MABs](https://arxiv.org/abs/2410.03284)** 
   <br><b><blue>Yu Chen*</blue></b>, Jiatai Huang\*, Yan Dai\*, and Longbo Huang.<br /> 
-  *The Thirteenth International Conference on Learning Representation* <green>[ICLR]</green>, 2025. [[PDF]](/files/2410.03284v1.pdf) 
+  *The Thirteenth International Conference on Learning Representation* <green>[ICLR]</green>, 2025. <red>(Spotlight, top 5%)</red> [[PDF]](/files/2410.03284v1.pdf) 
 
 - **[Provable Risk-Sensitive Distributional Reinforcement Learning with General Function Approximation](https://openreview.net/forum?id=0xmfExPqFf)**
   <br><b><blue>Yu Chen*</blue></b>, Xiangcheng Zhang\*, Siwei Wang, and Longbo Huang.  <br /> 

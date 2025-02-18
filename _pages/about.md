@@ -21,4 +21,4 @@ My research interests lie broadly in understanding the modern machine learning, 
 
 
 ## Academic Services
-- **Conference Reviewing**: NeurIPS 2023, ICLR 2025/2024.
+- **Conference Reviewing**: NeurIPS 2023, ICLR 2025/2024, ICML 2025. 
