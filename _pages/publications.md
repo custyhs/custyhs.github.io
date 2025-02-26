@@ -16,13 +16,17 @@ For a complete list, please refer to my [Google Scholar profile](https://scholar
 The publications are listed reverse chronologically.  
 \* indicates equal contribution
 
-<!-- <h2>Preprints</h2><hr /> -->
+<h2>Preprints</h2><hr />
 
+- **[Continuous K-Max Bandits](https://arxiv.org/abs/2502.13467)** 
+  <br><b><blue>Yu Chen*</blue></b>, Siwei Wang\*, Longbo Huang, and Wei Chen.<br /> 
+  *Arxiv*, 2025. [[PDF]](/files/2502.13467v1.pdf) 
+  
 <h2>Publications</h2><hr />
 
-- **[uniINF: Best-of-Both-Worlds Algorithm for Parameter-Free Heavy-Tailed MABs](https://arxiv.org/abs/2410.03284)** 
+- **[uniINF: Best-of-Both-Worlds Algorithm for Parameter-Free Heavy-Tailed MABs](https://openreview.net/forum?id=2pNLknCTvG)** 
   <br><b><blue>Yu Chen*</blue></b>, Jiatai Huang\*, Yan Dai\*, and Longbo Huang.<br /> 
-  *The Thirteenth International Conference on Learning Representation* <green>[ICLR]</green>, 2025. <red>(Spotlight, top 5%)</red> [[PDF]](/files/2410.03284v1.pdf) 
+  *The Thirteenth International Conference on Learning Representation* <green>[ICLR]</green>, 2025. <red>(Spotlight, Top 5%)</red> [[PDF]](/files/9301_uniINF_Best_of_Both_World.pdf) 
 
 - **[Provable Risk-Sensitive Distributional Reinforcement Learning with General Function Approximation](https://openreview.net/forum?id=0xmfExPqFf)**
   <br><b><blue>Yu Chen*</blue></b>, Xiangcheng Zhang\*, Siwei Wang, and Longbo Huang.  <br /> 
