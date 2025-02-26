@@ -20,7 +20,7 @@ The publications are listed reverse chronologically.
 
 - **[Continuous K-Max Bandits](https://arxiv.org/abs/2502.13467)** 
   <br><b><blue>Yu Chen*</blue></b>, Siwei Wang\*, Longbo Huang, and Wei Chen.<br /> 
-  *Arxiv*, 2025. [[PDF]](/files/2502.13467v1.pdf) 
+  *In submission.* [[PDF]](/files/2502.13467v1.pdf) 
   
 <h2>Publications</h2><hr />
 
