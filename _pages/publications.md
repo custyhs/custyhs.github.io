@@ -25,7 +25,7 @@ The publications are listed reverse chronologically.
 <h2>Publications</h2><hr />
 
 - **[Finite-Time Analysis of Discrete-Time Stochastic Interpolants](https://arxiv.org/abs/2502.09130)**
-  Yuhao Liu, <br><b><blue>Yu Chen</blue></b>, Rui Hu, Longbo Huang.<br /> 
+  <br>Yuhao Liu, <b><blue>Yu Chen</blue></b>, Rui Hu, Longbo Huang.<br /> 
   *Forty-second International Conference on Machine Learning* <green>[ICML]</green>, 2025. 
 
 - **[uniINF: Best-of-Both-Worlds Algorithm for Parameter-Free Heavy-Tailed MABs](https://openreview.net/forum?id=2pNLknCTvG)** 
