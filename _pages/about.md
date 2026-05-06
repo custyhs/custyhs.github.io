@@ -17,13 +17,15 @@ Prior to my Ph.D., I received my Bachelor of Science from Tsinghua University in
 
 ## Research Interests
 
-My research focuses on the theoretical foundations of reinforcement learning, bandits, and online decision-making. My current interests can be broadly organized into three directions:
+My research focuses on the theoretical foundations of reinforcement learning and online decision-making. My current interests can be broadly organized into three directions:
 
-- **Heavy-tailed feedback and robust online decision-making**: designing algorithms that learn reliably from noisy, unbounded, or heavy-tailed feedback, with guarantees that adapt to both benign stochastic environments and more challenging adversarial regimes. Representative works include [BoBW Parameter-Free Heavy-Tailed MABs](https://openreview.net/forum?id=2pNLknCTvG), [Continuous K-Max Bandits](https://arxiv.org/abs/2502.13467), and [BoBW Heavy-Tailed MDPs](https://arxiv.org/abs/2602.01295).
+- **Heavy-tailed feedback and robust online decision-making**: designing algorithms that learn reliably from noisy, unbounded, or heavy-tailed feedback, with guarantees that adapt to both benign stochastic environments and more challenging adversarial regimes. Representative works include [BoBW Parameter-Free Heavy-Tailed MABs](https://openreview.net/forum?id=2pNLknCTvG), [BoBW Heavy-Tailed MDPs](https://arxiv.org/abs/2602.01295), and [Continuous K-Max Bandits](https://arxiv.org/abs/2502.13467).
 
-- **Risk-sensitive reinforcement learning**: studying reinforcement learning beyond the standard expected-return objective, especially when the learner must optimize tail performance, distributional criteria, or other risk-aware notions of long-term reward. Representative works include [Distributional RL for Lipschitz Risk](https://openreview.net/forum?id=0xmfExPqFf), [Risk-Sensitive POMDPs](https://openreview.net/forum?id=5S8ukkEQr2), and [Iterated CVaR RL](https://openreview.net/forum?id=vW1SkPl4kp).
+- **Risk-sensitive reinforcement learning**: studying reinforcement learning beyond the standard expected-return objective, especially when the learner must optimize tail performance, distributional criteria, or other risk-aware notions of long-term reward. Representative works include [Distributional RL for Lipschitz Risk](https://openreview.net/forum?id=0xmfExPqFf), [Iterated CVaR RL](https://openreview.net/forum?id=vW1SkPl4kp), and [Risk-Sensitive POMDPs](https://openreview.net/forum?id=5S8ukkEQr2).
 
-- **Reinforcement learning with function approximation**: developing theory for large state-action spaces beyond the tabular setting, where function classes are used to generalize across states and actions while preserving sample-efficiency and finite-time guarantees. Representative works include [Reward-Free Linear RL](https://openreview.net/forum?id=U9HW6vyNClg), [Optimal Linear RL](https://proceedings.mlr.press/v162/hu22a.html), and [General Function Approximation](https://openreview.net/forum?id=0xmfExPqFf).
+- **Reinforcement learning with function approximation**: developing theory for large state-action spaces beyond the tabular setting, where function classes are used to generalize across states and actions while preserving sample-efficiency and finite-time guarantees. Representative works include [Reward-Free Linear RL](https://openreview.net/forum?id=U9HW6vyNClg), [General Function Approximation](https://openreview.net/forum?id=0xmfExPqFf), and [Optimal Linear RL](https://proceedings.mlr.press/v162/hu22a.html).
+
+I am also broadly interested in scheduling problems, decision problem in large language models, and diffusion theory. I am always open to new ideas and collaborations, so please feel free to reach out if you would like to discuss related topics.
 
 ## Academic Services
 
