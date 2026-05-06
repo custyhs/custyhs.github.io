@@ -27,7 +27,7 @@ The publications are listed reverse chronologically.
 - **Best-of-Both-Worlds for Heavy-Tailed Markov Decision Processes**
   <br><b><blue>Yu Chen</blue></b>, Yuhao Liu, Jiatai Huang, Yihan Du, and Longbo Huang.<br /> 
   *Forty-third International Conference on Machine Learning* <green>[ICML]</green>, 2026.
-  
+
 - **PowerFlow: Unlocking the Dual Nature of LLMs via Principled Distribution Matching**
   <br>Ruishuo Chen, <b><blue>Yu Chen</blue></b>, Zhuoran Li, and Longbo Huang.<br /> 
   *Forty-third International Conference on Machine Learning* <green>[ICML]</green>, 2026.
@@ -36,7 +36,7 @@ The publications are listed reverse chronologically.
   <br>Rui Hu, <b><blue>Yu Chen</blue></b>, and Longbo Huang.<br /> 
   *Forty-third International Conference on Machine Learning* <green>[ICML]</green>, 2026.
 
-- **Finite-Time Convergence Analysis of ODE-based Generative Models for Stochastic Interpolants**
+- **[Finite-Time Convergence Analysis of ODE-based Generative Models for Stochastic Interpolants](https://openreview.net/forum?id=VCStVrq0BZ)**
   <br>Yuhao Liu, <b><blue>Yu Chen</blue></b>, Rui Hu, and Longbo Huang.<br /> 
   *The Fourteenth International Conference on Learning Representations* <green>[ICLR]</green>, 2026.
 
