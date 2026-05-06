@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Publications List"
+title: "Selected Publications"
 permalink: /publications/
 author_profile: true
 ---
@@ -23,6 +23,22 @@ The publications are listed reverse chronologically.
   *In submission.* [[PDF]](/files/2502.13467v1.pdf) 
   
 <h2>Publications</h2><hr />
+
+- **Best-of-Both-Worlds for Heavy-Tailed Markov Decision Processes**
+  <br><b><blue>Yu Chen</blue></b>, Yuhao Liu, Jiatai Huang, Yihan Du, and Longbo Huang.<br /> 
+  *Forty-third International Conference on Machine Learning* <green>[ICML]</green>, 2026.
+  
+- **PowerFlow: Unlocking the Dual Nature of LLMs via Principled Distribution Matching**
+  <br>Ruishuo Chen, <b><blue>Yu Chen</blue></b>, Zhuoran Li, and Longbo Huang.<br /> 
+  *Forty-third International Conference on Machine Learning* <green>[ICML]</green>, 2026.
+
+- **Finite-time Convergence Analysis of Actor-Critic with Evolving Reward**
+  <br>Rui Hu, <b><blue>Yu Chen</blue></b>, and Longbo Huang.<br /> 
+  *Forty-third International Conference on Machine Learning* <green>[ICML]</green>, 2026.
+
+- **Finite-Time Convergence Analysis of ODE-based Generative Models for Stochastic Interpolants**
+  <br>Yuhao Liu, <b><blue>Yu Chen</blue></b>, Rui Hu, and Longbo Huang.<br /> 
+  *The Fourteenth International Conference on Learning Representations* <green>[ICLR]</green>, 2026.
 
 - **[Finite-Time Analysis of Discrete-Time Stochastic Interpolants](https://arxiv.org/abs/2502.09130)**
   <br>Yuhao Liu, <b><blue>Yu Chen</blue></b>, Rui Hu, Longbo Huang.<br /> 
