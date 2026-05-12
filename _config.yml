@@ -21,7 +21,7 @@ repository               : "custyhs/custyhs.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "life_photo.JPG"
+  avatar           : "life_photo_square.jpeg"
   name             : "Yu Chen"
   pronouns         : # example: "she/her"  
   bio              : "Ph.D. student @ IIIS, Tsinghua."
