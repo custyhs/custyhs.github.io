@@ -17,7 +17,7 @@ Prior to my Ph.D., I received my Bachelor of Science from Tsinghua University in
 
 ## Research Interests
 
-My research develops theoretical foundations and algorithms for AI for decision making, with an emphasis on efficient, robust, and reliable sequential decision making, reinforcement learning, and optimization under uncertainty. My current research is organized around three connected directions:
+My research aims to make AI for Decision Making more reliable by developing theoretical foundations and algorithms for sequential learning, reinforcement learning, and optimization under uncertainty. My current research is organized around three connected directions:
 
 - **Heavy-tailed feedback and robust online decision-making**: designing algorithms that learn reliably from noisy, unbounded, or heavy-tailed feedback, with guarantees that adapt to both benign stochastic environments and more challenging adversarial regimes. Representative works include [BoBW Parameter-Free Heavy-Tailed MABs](https://openreview.net/forum?id=2pNLknCTvG), [BoBW Heavy-Tailed MDPs](https://arxiv.org/abs/2602.01295), and [Continuous K-Max Bandits](https://arxiv.org/abs/2502.13467).
 
