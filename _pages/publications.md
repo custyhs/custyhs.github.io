@@ -16,13 +16,14 @@ For a complete list, please refer to my [Google Scholar profile](https://scholar
 The publications are listed reverse chronologically.  
 \* indicates equal contribution
 
-<h2>Preprints</h2><hr />
+<!-- <h2>Preprints</h2><hr /> -->
 
-- **[Continuous K-Max Bandits](https://arxiv.org/abs/2502.13467)** 
-  <br><b><blue>Yu Chen*</blue></b>, Siwei Wang\*, Longbo Huang, and Wei Chen.<br /> 
-  *In submission.*
   
 <h2>Publications</h2><hr />
+
+- **Continuous K-Max Bandits** 
+  <br><b><blue>Yu Chen*</blue></b>, Siwei Wang\*, Longbo Huang, and Wei Chen.<br /> 
+  *Forty-Second Annual Conference on Uncertainty in Artificial Intelligence* <green>[UAI]</green>, 2026.
 
 - **Best-of-Both-Worlds for Heavy-Tailed Markov Decision Processes**
   <br><b><blue>Yu Chen</blue></b>, Yuhao Liu, Jiatai Huang, Yihan Du, and Longbo Huang.<br /> 
@@ -40,7 +41,7 @@ The publications are listed reverse chronologically.
   <br>Yuhao Liu, <b><blue>Yu Chen</blue></b>, Rui Hu, and Longbo Huang.<br /> 
   *The Fourteenth International Conference on Learning Representations* <green>[ICLR]</green>, 2026.
 
-- **[Finite-Time Analysis of Discrete-Time Stochastic Interpolants](https://arxiv.org/abs/2502.09130)**
+- **Finite-Time Analysis of Discrete-Time Stochastic Interpolants**
   <br>Yuhao Liu, <b><blue>Yu Chen</blue></b>, Rui Hu, Longbo Huang.<br /> 
   *Forty-second International Conference on Machine Learning* <green>[ICML]</green>, 2025. 
 
