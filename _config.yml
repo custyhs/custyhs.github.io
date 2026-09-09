@@ -168,7 +168,6 @@ exclude:
   - Capfile
   - config
   - Dockerfile
-  - design-qa.md
   - docs
   - Gemfile
   - Gemfile.lock
@@ -229,7 +228,7 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
+      layout: academic
       author_profile: true
       read_time: true
       comments: true
@@ -240,14 +239,14 @@ defaults:
       path: ""
       type: pages
     values:
-      layout: single
+      layout: academic
       author_profile: true
   # _teaching
   - scope:
       path: ""
       type: teaching
     values:
-      layout: single
+      layout: academic
       author_profile: true
       share: true
       comments: true
@@ -256,7 +255,7 @@ defaults:
       path: ""
       type: publications
     values:
-      layout: single
+      layout: academic
       author_profile: true
       share: true
       comments: false
@@ -265,7 +264,7 @@ defaults:
       path: ""
       type: portfolio
     values:
-      layout: single
+      layout: academic
       author_profile: true
       share: true
       comment: true
@@ -274,7 +273,7 @@ defaults:
       path: ""
       type: talks
     values:
-      layout: talk
+      layout: academic
       author_profile: true
       share: true
 

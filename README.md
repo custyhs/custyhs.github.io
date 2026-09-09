@@ -2,21 +2,38 @@ https://custyhs.github.io/
 
 This Website is based on https://academicpages.github.io/.
 
-## Academic design
+## Site structure
 
-The main pages use a custom Jekyll layout inspired by the reading-focused style
-of https://yandaichn.github.io/: a centered column, serif body text, purple links,
-and a portrait beside the introduction. All fonts and icons are served locally.
+The site uses one custom Jekyll layout and a small set of partials; the
+AcademicPages templates it was forked from have been removed.
 
-- Edit the homepage in `_pages/about.md` and awards in `_pages/awards.md`.
-- Maintain papers in `_data/publications.yml`; `featured: true` also shows a paper
-  under Recent work. Author order and `*` contribution marks are preserved.
-- Adjust the layout in `_layouts/academic.html` and styles in `_sass/_academic.scss`.
-- The theme button remembers a light/dark preference on the current browser.
-- Run `bundle exec jekyll serve --host 127.0.0.1 --port 8767` for a local preview.
+- `_layouts/academic.html` – page shell (header, content column, footer, back-to-top).
+- `_includes/academic-*.html` – header, contact row, topic tags, featured papers,
+  news list, publication entry, publication toolbar, share-card metadata.
+- `_sass/_academic.scss` – all styles (ink-blue tokens, light and dark themes).
+- `assets/js/academic.js` – theme toggle, topic filter, year jump, BibTeX copy,
+  news toggle, back-to-top. Everything degrades to fully visible content without JS.
+- `_pages/about.md`, `_pages/publications.md`, `_pages/awards.md` – page content.
 
-The AcademicPages layouts remain available for other page types. The main pages
-use the existing build-version update check described below.
+Content lives in data files:
+
+- `_data/publications.yml` – one entry per paper: `id`, `title`, `authors`, `year`,
+  `kind` (`publication` or `preprint`), `venue`, `venue_full`, optional `note`,
+  `topics` (slugs from `_data/topics.yml`), optional `featured` + `featured_note`
+  (homepage cards), `links` (pills: `paper`, `arxiv`, `code`, `slides`, `video`),
+  optional `bibtex` (enables the BibTeX pill).
+- `_data/topics.yml` – topic slugs and labels; `home: true` topics appear as homepage tags.
+- `_data/news.yml` – homepage news (`when`, Markdown `text`), newest first.
+- `_data/navigation.yml` – header links.
+
+Local preview (this machine needs the Homebrew Ruby, not the system one):
+
+    export PATH="/opt/homebrew/opt/ruby/bin:/opt/homebrew/lib/ruby/gems/4.0.0/bin:$PATH"
+    bundle exec jekyll serve --host 127.0.0.1 --port 4000
+
+`jekyll build` keeps the production `url`, so a static preview of the build output
+needs a config override such as `--config _config.yml,local.yml` with
+`url: "http://127.0.0.1:4000"`; `jekyll serve` handles this automatically.
 
 ## Update checks
 
