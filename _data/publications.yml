@@ -1,134 +1,193 @@
-# Source: the verified publication list published on 2026-09-09.
-# Order is reverse chronological; featured entries also appear on the homepage.
-- title: "Optimal Skill Selection for LLM Agents with Provable Bicriteria Guarantees"
-  url: "https://arxiv.org/abs/2608.19993"
+# Publications, newest first. Titles, authors, venues, and years follow the list
+# verified on 2026-09-09. Each entry: id (anchor), kind (publication | preprint),
+# venue (left-column label), venue_full, optional note (honours), topics (slugs from
+# _data/topics.yml), optional featured/featured_note (homepage cards), links (pills,
+# in order), optional bibtex (enables the BibTeX pill).
+- id: chen2026skill
+  title: "Optimal Skill Selection for LLM Agents with Provable Bicriteria Guarantees"
   authors: ["Yu Chen*", "Ruishuo Chen*", "Xun Wang", "Zhuoran Li", "Longbo Huang"]
   year: 2026
-  kind: "preprint"
-  venue: "Preprint"
+  kind: preprint
+  venue: arXiv
   venue_full: "arXiv preprint"
-  featured: true
+  topics: [llm]
+  links:
+    - { label: arXiv, url: "https://arxiv.org/abs/2608.19993", kind: arxiv }
 
-- title: "When Context Returns: Toward Robust Internalization in On-Policy Distillation"
-  url: "https://arxiv.org/abs/2606.11627"
+- id: wang2026context
+  title: "When Context Returns: Toward Robust Internalization in On-Policy Distillation"
   authors: ["Xun Wang", "Ruishuo Chen", "Zhuoran Li", "Yu Chen", "Longbo Huang"]
   year: 2026
-  kind: "preprint"
-  venue: "Preprint"
+  kind: preprint
+  venue: arXiv
   venue_full: "arXiv preprint"
-  featured: true
+  topics: [llm]
+  links:
+    - { label: arXiv, url: "https://arxiv.org/abs/2606.11627", kind: arxiv }
 
-- title: "On the Sublinear Regret of Continuous K-Max Bandits"
-  url: "https://proceedings.mlr.press/v337/chen26d.html"
+- id: chen2026kmax
+  title: "On the Sublinear Regret of Continuous K-Max Bandits"
   authors: ["Yu Chen*", "Siwei Wang*", "Longbo Huang", "Wei Chen"]
   year: 2026
-  kind: "publication"
-  venue: "UAI"
+  kind: publication
+  venue: UAI
   venue_full: "Forty-Second Annual Conference on Uncertainty in Artificial Intelligence"
-  featured: true
+  topics: [heavy-tailed]
+  links:
+    - { label: Paper, url: "https://proceedings.mlr.press/v337/chen26d.html", kind: paper }
+    - { label: arXiv, url: "https://arxiv.org/abs/2502.13467", kind: arxiv }
 
-- title: "Best-of-Both-Worlds for Heavy-Tailed Markov Decision Processes"
-  url: "https://openreview.net/forum?id=j6gXeiPJ3z"
+- id: chen2026bobwmdp
+  title: "Best-of-Both-Worlds for Heavy-Tailed Markov Decision Processes"
   authors: ["Yu Chen", "Yuhao Liu", "Jiatai Huang", "Yihan Du", "Longbo Huang"]
   year: 2026
-  kind: "publication"
-  venue: "ICML"
+  kind: publication
+  venue: ICML
   venue_full: "Forty-third International Conference on Machine Learning"
+  topics: [heavy-tailed]
+  links:
+    - { label: Paper, url: "https://openreview.net/forum?id=j6gXeiPJ3z", kind: paper }
+    - { label: arXiv, url: "https://arxiv.org/abs/2602.01295", kind: arxiv }
 
-- title: "PowerFlow: Unlocking the Dual Nature of LLMs via Principled Distribution Matching"
-  url: "https://openreview.net/forum?id=m3H7Oexpbx"
+- id: chen2026powerflow
+  title: "PowerFlow: Unlocking the Dual Nature of LLMs via Principled Distribution Matching"
   authors: ["Ruishuo Chen", "Yu Chen", "Zhuoran Li", "Longbo Huang"]
   year: 2026
-  kind: "publication"
-  venue: "ICML"
+  kind: publication
+  venue: ICML
   venue_full: "Forty-third International Conference on Machine Learning"
-  code: "https://github.com/Chenruishuo/PowerFlow"
+  topics: [llm]
+  links:
+    - { label: Paper, url: "https://openreview.net/forum?id=m3H7Oexpbx", kind: paper }
+    - { label: arXiv, url: "https://arxiv.org/abs/2603.18363", kind: arxiv }
+    - { label: Code, url: "https://github.com/Chenruishuo/PowerFlow", kind: code }
 
-- title: "Finite-time Convergence Analysis of Actor-Critic with Evolving Reward"
-  url: "https://openreview.net/forum?id=hocdjAEAIm"
+- id: hu2026actorcritic
+  title: "Finite-time Convergence Analysis of Actor-Critic with Evolving Reward"
   authors: ["Rui Hu", "Yu Chen", "Longbo Huang"]
   year: 2026
-  kind: "publication"
-  venue: "ICML"
+  kind: publication
+  venue: ICML
   venue_full: "Forty-third International Conference on Machine Learning"
+  topics: [function-approximation]
+  links:
+    - { label: Paper, url: "https://openreview.net/forum?id=hocdjAEAIm", kind: paper }
+    - { label: arXiv, url: "https://arxiv.org/abs/2510.12334", kind: arxiv }
 
-- title: "Finite-Time Convergence Analysis of ODE-based Generative Models for Stochastic Interpolants"
-  url: "https://openreview.net/forum?id=VCStVrq0BZ"
+- id: liu2026ode
+  title: "Finite-Time Convergence Analysis of ODE-based Generative Models for Stochastic Interpolants"
   authors: ["Yuhao Liu", "Yu Chen", "Rui Hu", "Longbo Huang"]
   year: 2026
-  kind: "publication"
-  venue: "ICLR"
+  kind: publication
+  venue: ICLR
   venue_full: "The Fourteenth International Conference on Learning Representations"
+  topics: [generative]
+  links:
+    - { label: Paper, url: "https://openreview.net/forum?id=VCStVrq0BZ", kind: paper }
 
-- title: "Finite-Time Analysis of Discrete-Time Stochastic Interpolants"
-  url: "https://proceedings.mlr.press/v267/liu25d.html"
+- id: liu2025interpolants
+  title: "Finite-Time Analysis of Discrete-Time Stochastic Interpolants"
   authors: ["Yuhao Liu", "Yu Chen", "Rui Hu", "Longbo Huang"]
   year: 2025
-  kind: "publication"
-  venue: "ICML"
+  kind: publication
+  venue: ICML
   venue_full: "Forty-second International Conference on Machine Learning"
+  topics: [generative]
+  links:
+    - { label: Paper, url: "https://proceedings.mlr.press/v267/liu25d.html", kind: paper }
+    - { label: arXiv, url: "https://arxiv.org/abs/2502.09130", kind: arxiv }
 
-- title: "uniINF: Best-of-Both-Worlds Algorithm for Parameter-Free Heavy-Tailed MABs"
-  url: "https://openreview.net/forum?id=2pNLknCTvG"
+- id: chen2025uniinf
+  title: "uniINF: Best-of-Both-Worlds Algorithm for Parameter-Free Heavy-Tailed MABs"
   authors: ["Yu Chen*", "Jiatai Huang*", "Yan Dai*", "Longbo Huang"]
   year: 2025
-  kind: "publication"
-  venue: "ICLR"
-  venue_full: "The Thirteenth International Conference on Learning Representation"
-  distinction: "Spotlight · Top 5%"
+  kind: publication
+  venue: ICLR
+  venue_full: "The Thirteenth International Conference on Learning Representations"
+  note: "Spotlight, Top 5%"
+  topics: [heavy-tailed]
+  featured: true
+  featured_note: "Best-of-both-worlds guarantees for heavy-tailed bandits without knowing the tail parameters."
+  links:
+    - { label: Paper, url: "https://openreview.net/forum?id=2pNLknCTvG", kind: paper }
 
-- title: "Provable Risk-Sensitive Distributional Reinforcement Learning with General Function Approximation"
-  url: "https://openreview.net/forum?id=0xmfExPqFf"
+- id: chen2024risk
+  title: "Provable Risk-Sensitive Distributional Reinforcement Learning with General Function Approximation"
   authors: ["Yu Chen*", "Xiangcheng Zhang*", "Siwei Wang", "Longbo Huang"]
   year: 2024
-  kind: "publication"
-  venue: "ICML"
+  kind: publication
+  venue: ICML
   venue_full: "Forty-first International Conference on Machine Learning"
+  topics: [risk-sensitive, function-approximation]
+  featured: true
+  featured_note: "Risk-sensitive distributional RL with general function approximation."
+  links:
+    - { label: Paper, url: "https://openreview.net/forum?id=0xmfExPqFf", kind: paper }
 
-- title: "Provably Efficient Partially Observable Risk-Sensitive Reinforcement Learning with Hindsight Observation"
-  url: "https://openreview.net/forum?id=5S8ukkEQr2"
+- id: zhang2024pomdp
+  title: "Provably Efficient Partially Observable Risk-Sensitive Reinforcement Learning with Hindsight Observation"
   authors: ["Tonghe Zhang*", "Yu Chen*", "Longbo Huang"]
   year: 2024
-  kind: "publication"
-  venue: "ICML"
+  kind: publication
+  venue: ICML
   venue_full: "Forty-first International Conference on Machine Learning"
+  topics: [risk-sensitive]
+  links:
+    - { label: Paper, url: "https://openreview.net/forum?id=5S8ukkEQr2", kind: paper }
 
-- title: "Multi-User Delay-Constrained Scheduling With Deep Recurrent Reinforcement Learning"
-  url: "https://ieeexplore.ieee.org/abstract/document/10431724"
+- id: hu2024ton
+  title: "Multi-User Delay-Constrained Scheduling With Deep Recurrent Reinforcement Learning"
   authors: ["Pihe Hu", "Yu Chen", "Ling Pan", "Zhixuan Fang", "Fu Xiao", "Longbo Huang"]
   year: 2024
-  kind: "publication"
-  venue: "TON"
+  kind: publication
+  venue: TON
   venue_full: "IEEE/ACM Transactions on Networking"
+  topics: [scheduling]
+  links:
+    - { label: Paper, url: "https://ieeexplore.ieee.org/abstract/document/10431724", kind: paper }
 
-- title: "Provably Efficient Iterated CVaR Reinforcement Learning with Function Approximation and Human Feedback"
-  url: "https://openreview.net/forum?id=vW1SkPl4kp"
+- id: chen2024cvar
+  title: "Provably Efficient Iterated CVaR Reinforcement Learning with Function Approximation and Human Feedback"
   authors: ["Yu Chen", "Yihan Du", "Pihe Hu", "Siwei Wang", "Desheng Wu", "Longbo Huang"]
   year: 2024
-  kind: "publication"
-  venue: "ICLR"
+  kind: publication
+  venue: ICLR
   venue_full: "The Twelfth International Conference on Learning Representations"
+  topics: [risk-sensitive, function-approximation]
+  links:
+    - { label: Paper, url: "https://openreview.net/forum?id=vW1SkPl4kp", kind: paper }
 
-- title: "Towards Minimax Optimal Reward-free Reinforcement Learning in Linear MDPs"
-  url: "https://openreview.net/forum?id=U9HW6vyNClg"
+- id: hu2023rewardfree
+  title: "Towards Minimax Optimal Reward-free Reinforcement Learning in Linear MDPs"
   authors: ["Pihe Hu*", "Yu Chen*", "Longbo Huang"]
   year: 2023
-  kind: "publication"
-  venue: "ICLR"
+  kind: publication
+  venue: ICLR
   venue_full: "The Eleventh International Conference on Learning Representations"
+  topics: [function-approximation]
+  featured: true
+  featured_note: "Minimax-optimal reward-free exploration in linear MDPs."
+  links:
+    - { label: Paper, url: "https://openreview.net/forum?id=U9HW6vyNClg", kind: paper }
 
-- title: "Effective multi-user delay-constrained scheduling with deep recurrent reinforcement learning"
-  url: "https://dl.acm.org/doi/abs/10.1145/3492866.3549712"
+- id: hu2022mobihoc
+  title: "Effective multi-user delay-constrained scheduling with deep recurrent reinforcement learning"
   authors: ["Pihe Hu", "Ling Pan", "Yu Chen", "Zhixuan Fang", "Longbo Huang"]
   year: 2022
-  kind: "publication"
-  venue: "MobiHoc"
+  kind: publication
+  venue: MobiHoc
   venue_full: "Algorithmic Foundations, and Protocol Design for Mobile Networks and Mobile Computing"
+  topics: [scheduling]
+  links:
+    - { label: Paper, url: "https://dl.acm.org/doi/abs/10.1145/3492866.3549712", kind: paper }
 
-- title: "Nearly Minimax Optimal Reinforcement Learning with Linear Function Approximation"
-  url: "https://proceedings.mlr.press/v162/hu22a.html"
+- id: hu2022linear
+  title: "Nearly Minimax Optimal Reinforcement Learning with Linear Function Approximation"
   authors: ["Pihe Hu", "Yu Chen", "Longbo Huang"]
   year: 2022
-  kind: "publication"
-  venue: "ICML"
+  kind: publication
+  venue: ICML
   venue_full: "Proceedings of the 39th International Conference on Machine Learning"
+  topics: [function-approximation]
+  links:
+    - { label: Paper, url: "https://proceedings.mlr.press/v162/hu22a.html", kind: paper }
