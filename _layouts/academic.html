@@ -23,8 +23,9 @@ layout: compress
     </main>
     <footer class="site-footer">
       <span>&copy; {{ site.time | date: '%Y' }} {{ site.name }}.</span>
-      <span>Built with <a href="https://jekyllrb.com/">Jekyll</a>. Updated {{ site.time | date: '%B %Y' }}.</span>
+      <span>Built with <a href="https://jekyllrb.com/">Jekyll</a> &middot; Updated {{ site.time | date: '%B %Y' }}.</span>
     </footer>
+    <button class="back-to-top" type="button" aria-label="Back to top" hidden><i class="fas fa-arrow-up" aria-hidden="true"></i></button>
     <script src="{{ base_path }}/assets/js/academic.js?v={{ site_version }}" defer></script>
   </body>
 </html>
