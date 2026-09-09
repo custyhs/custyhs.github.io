@@ -169,6 +169,7 @@ exclude:
   - config
   - Dockerfile
   - design-qa.md
+  - docs
   - Gemfile
   - Gemfile.lock
   - Gruntfile.js
