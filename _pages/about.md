@@ -48,6 +48,7 @@ My research aims to make AI for Decision Making more reliable by developing theo
 - **Reinforcement learning with function approximation**: developing theory for large state-action spaces beyond the tabular setting, where function classes are used to generalize across states and actions while preserving sample-efficiency and finite-time guarantees. Representative works include [Reward-Free Linear RL](https://openreview.net/forum?id=U9HW6vyNClg), [Risk-Sensitive Linear RL](https://proceedings.iclr.cc/paper_files/paper/2024/hash/81f19c0e9f3e06c831630ab6662fd8ea-Abstract-Conference.html), and [Risk Sensitive General Function Approximation](https://openreview.net/forum?id=0xmfExPqFf).
 
 I am also broadly interested in scheduling, distribution matching, and decision-making in large language models. I am always open to new ideas and collaborations, so please feel free to reach out if you would like to discuss.
+
 </section>
 
 <section class="home-section service-list" aria-labelledby="academic-services" markdown="1">
@@ -55,4 +56,5 @@ I am also broadly interested in scheduling, distribution matching, and decision-
 
 - **Conference Reviewing**: NeurIPS; ICLR; ICML;
 - **Journal Reviewing**: Expert Systems With Applications;
+
 </section>
