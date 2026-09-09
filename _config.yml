@@ -179,6 +179,7 @@ exclude:
   - package.json*
   - Rakefile
   - README
+  - tests
   - tmp
   - vendor
   - $

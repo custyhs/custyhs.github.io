@@ -16,24 +16,31 @@ For a complete list, please refer to my [Google Scholar profile](https://scholar
 The publications are listed reverse chronologically.  
 \* indicates equal contribution
 
-<!-- <h2>Preprints</h2><hr /> -->
+<h2>Preprints</h2><hr />
 
-  
+- **[Optimal Skill Selection for LLM Agents with Provable Bicriteria Guarantees](https://arxiv.org/abs/2608.19993)**
+  <br><b><blue>Yu Chen*</blue></b>, Ruishuo Chen\*, Xun Wang, Zhuoran Li, and Longbo Huang.<br />
+  *arXiv preprint*, 2026.
+
+- **[When Context Returns: Toward Robust Internalization in On-Policy Distillation](https://arxiv.org/abs/2606.11627)**
+  <br>Xun Wang, Ruishuo Chen, Zhuoran Li, <b><blue>Yu Chen</blue></b>, and Longbo Huang.<br />
+  *arXiv preprint*, 2026.
+
 <h2>Publications</h2><hr />
 
-- **Continuous K-Max Bandits** 
+- **[On the Sublinear Regret of Continuous K-Max Bandits](https://proceedings.mlr.press/v337/chen26d.html)**
   <br><b><blue>Yu Chen*</blue></b>, Siwei Wang\*, Longbo Huang, and Wei Chen.<br /> 
   *Forty-Second Annual Conference on Uncertainty in Artificial Intelligence* <green>[UAI]</green>, 2026.
 
-- **Best-of-Both-Worlds for Heavy-Tailed Markov Decision Processes**
+- **[Best-of-Both-Worlds for Heavy-Tailed Markov Decision Processes](https://openreview.net/forum?id=j6gXeiPJ3z)**
   <br><b><blue>Yu Chen</blue></b>, Yuhao Liu, Jiatai Huang, Yihan Du, and Longbo Huang.<br /> 
   *Forty-third International Conference on Machine Learning* <green>[ICML]</green>, 2026.
 
-- **PowerFlow: Unlocking the Dual Nature of LLMs via Principled Distribution Matching**
+- **[PowerFlow: Unlocking the Dual Nature of LLMs via Principled Distribution Matching](https://openreview.net/forum?id=m3H7Oexpbx)**
   <br>Ruishuo Chen, <b><blue>Yu Chen</blue></b>, Zhuoran Li, and Longbo Huang.<br /> 
-  *Forty-third International Conference on Machine Learning* <green>[ICML]</green>, 2026.
+  *Forty-third International Conference on Machine Learning* <green>[ICML]</green>, 2026. [Code](https://github.com/Chenruishuo/PowerFlow)
 
-- **Finite-time Convergence Analysis of Actor-Critic with Evolving Reward**
+- **[Finite-time Convergence Analysis of Actor-Critic with Evolving Reward](https://openreview.net/forum?id=hocdjAEAIm)**
   <br>Rui Hu, <b><blue>Yu Chen</blue></b>, and Longbo Huang.<br /> 
   *Forty-third International Conference on Machine Learning* <green>[ICML]</green>, 2026.
 
@@ -41,7 +48,7 @@ The publications are listed reverse chronologically.
   <br>Yuhao Liu, <b><blue>Yu Chen</blue></b>, Rui Hu, and Longbo Huang.<br /> 
   *The Fourteenth International Conference on Learning Representations* <green>[ICLR]</green>, 2026.
 
-- **Finite-Time Analysis of Discrete-Time Stochastic Interpolants**
+- **[Finite-Time Analysis of Discrete-Time Stochastic Interpolants](https://proceedings.mlr.press/v267/liu25d.html)**
   <br>Yuhao Liu, <b><blue>Yu Chen</blue></b>, Rui Hu, Longbo Huang.<br /> 
   *Forty-second International Conference on Machine Learning* <green>[ICML]</green>, 2025. 
 

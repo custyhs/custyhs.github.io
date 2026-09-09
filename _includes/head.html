@@ -1,6 +1,8 @@
 {% include base_path %}
 
 <meta charset="utf-8">
+<meta name="site-build-version" content="{{ site_version }}" data-version-url="{{ site.baseurl }}/version.json">
+<script>{% include check-update.js %}</script>
 
 {% include seo.html %}
 
@@ -16,6 +18,6 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
+<link rel="stylesheet" href="{{ base_path }}/assets/css/main.css?v={{ site_version }}">
 
 <meta http-equiv="cleartype" content="on">
