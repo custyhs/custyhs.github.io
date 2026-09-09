@@ -45,11 +45,9 @@ raise 'Topic toolbar missing' unless pubs.at_css('.pub-toolbar [data-topic="all"
 raise 'Year anchors do not match year links' unless pubs.css('.year-anchor').length == pubs.css('.year-jump a').length
 puts "publications: #{entries.length} entries with topics, years, and links"
 
-home_tags = home.css('.topic-tags a')
-raise "Expected 5 topic tags, found #{home_tags.length}" unless home_tags.length == 5 && home_tags.all? { |a| a['href'].include?('/publications/?topic=') }
 raise 'Fewer than 6 news items' unless home.css('.news-list li[data-index]').length >= 6
 raise 'Contact row should have four links' unless home.css('.contact-links a').length == 4
-puts "home: #{home_tags.length} tags, #{home.css('.news-list li').length} news items"
+puts "home: #{home.css('.news-list li').length} news items"
 
 awards = Nokogiri::HTML(File.read(File.join(root, 'awards/index.html')))
 rows = awards.css('li.award')

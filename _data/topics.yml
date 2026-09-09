@@ -1,8 +1,7 @@
-# Research topics used for homepage tags and the publication filter.
-# `home: true` topics appear as tags on the homepage; all topics appear as filter chips.
-- { slug: heavy-tailed, label: "Heavy-tailed & robust bandits", home: true }
-- { slug: risk-sensitive, label: "Risk-sensitive RL", home: true }
-- { slug: function-approximation, label: "RL with function approximation", home: true }
-- { slug: generative, label: "Generative model theory", home: true }
-- { slug: llm, label: "LLMs & distribution matching", home: true }
-- { slug: scheduling, label: "Scheduling & networking", home: false }
+# Research topics used by the publication filter; every topic appears as a filter chip.
+- { slug: heavy-tailed, label: "Heavy-tailed & robust bandits" }
+- { slug: risk-sensitive, label: "Risk-sensitive RL" }
+- { slug: function-approximation, label: "RL with function approximation" }
+- { slug: generative, label: "Generative model theory" }
+- { slug: llm, label: "LLMs & distribution matching" }
+- { slug: scheduling, label: "Scheduling & networking" }

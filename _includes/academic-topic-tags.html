@@ -1,8 +1,0 @@
-<nav class="topic-tags" aria-label="Research topics">
-  <span class="topic-tags__label">Topics</span>
-  {%- for topic in site.data.topics -%}
-  {%- if topic.home %}
-  <a class="chip" href="{{ site.baseurl }}/publications/?topic={{ topic.slug }}">{{ topic.label }}</a>
-  {%- endif -%}
-  {%- endfor %}
-</nav>

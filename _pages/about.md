@@ -30,8 +30,6 @@ Prior to my Ph.D., I received my Bachelor of Science from Tsinghua University in
 </figure>
 </div>
 
-{% include academic-topic-tags.html %}
-
 {% include academic-news.html %}
 
 <section class="home-section research-interests" aria-labelledby="research-interests" markdown="1">
