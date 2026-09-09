@@ -1,22 +1,34 @@
 ---
-layout: archive
-title: "Selected Awards"
+layout: academic
+title: "Selected awards"
 permalink: /awards/
-author_profile: true
 ---
-<style>
-red { color: Red }
-orange { color: Orange }
-green { color: Green }
-blue { color: Blue }
-</style>
-- **ICLR 2025 Spotlights** *<red>(Top 5% of all submissions)</red>*.
-- **China National Scholarship** (国家奖学金) for graduate student, by Ministry of Education of China, 2024. 
-  *<red>Top scholarship in China, 2% domestically.</red>*
-- **China National Scholarship** (国家奖学金) for undergraduate student, by Ministry of Education of China, 2022.   
-  *<red>Top scholarship in China, 2% domestically.</red>*
-- **Xiao Qin Scholarship**, by Department of Mathematcs, Tsinghua University, 2022.   
-  *Recognition for the <red>best student of each class</red> in Department of Mathematcs, Tsinghua.*
-- **Tsinghua University Scholarship**, by Tsinghua University, 2020 and 2021.   
-  *Recognition for the performance in academic and social work.*
-- **First Prize**(Beijing Area) in Contemporary Undergraduate Mathematical Contest in Modeling, by China Society for Industrial and Applied Mathematics, 2020.
+
+<p class="page-intro">A selection of research and academic honors.</p>
+
+<section class="publication-group" aria-labelledby="awards-2025">
+  <h2 class="publication-year" id="awards-2025">2025</h2>
+  <ul class="award-list">
+    <li><h3>ICLR Spotlight</h3><p>Top 5% of all submissions. <a href="https://openreview.net/forum?id=2pNLknCTvG">uniINF: Best-of-Both-Worlds Algorithm for Parameter-Free Heavy-Tailed MABs</a>.</p></li>
+  </ul>
+</section>
+<section class="publication-group" aria-labelledby="awards-2024">
+  <h2 class="publication-year" id="awards-2024">2024</h2>
+  <ul class="award-list">
+    <li><h3>China National Scholarship <span lang="zh">(国家奖学金)</span></h3><p>Graduate scholarship awarded by the Ministry of Education of China. Top 2% domestically.</p></li>
+  </ul>
+</section>
+<section class="publication-group" aria-labelledby="awards-2022">
+  <h2 class="publication-year" id="awards-2022">2022</h2>
+  <ul class="award-list">
+    <li><h3>China National Scholarship <span lang="zh">(国家奖学金)</span></h3><p>Undergraduate scholarship awarded by the Ministry of Education of China. Top 2% domestically.</p></li>
+    <li><h3>Xiao Qin Scholarship</h3><p>Department of Mathematics, Tsinghua University. Recognition for the best student of each class.</p></li>
+  </ul>
+</section>
+<section class="publication-group" aria-labelledby="awards-2021">
+  <h2 class="publication-year" id="awards-2021">2020–21</h2>
+  <ul class="award-list">
+    <li><h3>Tsinghua University Scholarship</h3><p>Awarded in 2020 and 2021 for academic and social work.</p></li>
+    <li><h3>First Prize, Beijing Area</h3><p>Contemporary Undergraduate Mathematical Contest in Modeling, 2020.</p></li>
+  </ul>
+</section>

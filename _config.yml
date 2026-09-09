@@ -168,6 +168,7 @@ exclude:
   - Capfile
   - config
   - Dockerfile
+  - design-qa.md
   - Gemfile
   - Gemfile.lock
   - Gruntfile.js

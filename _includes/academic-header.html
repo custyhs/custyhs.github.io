@@ -1,0 +1,15 @@
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="site-brand" href="{{ base_path }}/">{{ site.name }}</a>
+    <nav class="site-navigation" aria-label="Main navigation">
+      <a href="{{ base_path }}/"{% if page.permalink == '/' %} aria-current="page"{% endif %}>About</a>
+      {% for link in site.data.navigation.main %}
+      <a href="{% unless link.url contains '://' %}{{ base_path }}{% endunless %}{{ link.url }}"{% if page.url == link.url %} aria-current="page"{% endif %}{% if link.url contains '.pdf' %} aria-label="CV (PDF)"{% endif %}>{{ link.title }}</a>
+      {% endfor %}
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch to dark theme" aria-pressed="false" hidden>
+      <i class="fas fa-moon theme-icon--moon" aria-hidden="true"></i>
+      <i class="fas fa-sun theme-icon--sun" aria-hidden="true"></i>
+    </button>
+  </div>
+</header>

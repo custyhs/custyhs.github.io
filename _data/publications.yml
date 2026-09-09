@@ -1,0 +1,134 @@
+# Source: the verified publication list published on 2026-09-09.
+# Order is reverse chronological; featured entries also appear on the homepage.
+- title: "Optimal Skill Selection for LLM Agents with Provable Bicriteria Guarantees"
+  url: "https://arxiv.org/abs/2608.19993"
+  authors: ["Yu Chen*", "Ruishuo Chen*", "Xun Wang", "Zhuoran Li", "Longbo Huang"]
+  year: 2026
+  kind: "preprint"
+  venue: "Preprint"
+  venue_full: "arXiv preprint"
+  featured: true
+
+- title: "When Context Returns: Toward Robust Internalization in On-Policy Distillation"
+  url: "https://arxiv.org/abs/2606.11627"
+  authors: ["Xun Wang", "Ruishuo Chen", "Zhuoran Li", "Yu Chen", "Longbo Huang"]
+  year: 2026
+  kind: "preprint"
+  venue: "Preprint"
+  venue_full: "arXiv preprint"
+  featured: true
+
+- title: "On the Sublinear Regret of Continuous K-Max Bandits"
+  url: "https://proceedings.mlr.press/v337/chen26d.html"
+  authors: ["Yu Chen*", "Siwei Wang*", "Longbo Huang", "Wei Chen"]
+  year: 2026
+  kind: "publication"
+  venue: "UAI"
+  venue_full: "Forty-Second Annual Conference on Uncertainty in Artificial Intelligence"
+  featured: true
+
+- title: "Best-of-Both-Worlds for Heavy-Tailed Markov Decision Processes"
+  url: "https://openreview.net/forum?id=j6gXeiPJ3z"
+  authors: ["Yu Chen", "Yuhao Liu", "Jiatai Huang", "Yihan Du", "Longbo Huang"]
+  year: 2026
+  kind: "publication"
+  venue: "ICML"
+  venue_full: "Forty-third International Conference on Machine Learning"
+
+- title: "PowerFlow: Unlocking the Dual Nature of LLMs via Principled Distribution Matching"
+  url: "https://openreview.net/forum?id=m3H7Oexpbx"
+  authors: ["Ruishuo Chen", "Yu Chen", "Zhuoran Li", "Longbo Huang"]
+  year: 2026
+  kind: "publication"
+  venue: "ICML"
+  venue_full: "Forty-third International Conference on Machine Learning"
+  code: "https://github.com/Chenruishuo/PowerFlow"
+
+- title: "Finite-time Convergence Analysis of Actor-Critic with Evolving Reward"
+  url: "https://openreview.net/forum?id=hocdjAEAIm"
+  authors: ["Rui Hu", "Yu Chen", "Longbo Huang"]
+  year: 2026
+  kind: "publication"
+  venue: "ICML"
+  venue_full: "Forty-third International Conference on Machine Learning"
+
+- title: "Finite-Time Convergence Analysis of ODE-based Generative Models for Stochastic Interpolants"
+  url: "https://openreview.net/forum?id=VCStVrq0BZ"
+  authors: ["Yuhao Liu", "Yu Chen", "Rui Hu", "Longbo Huang"]
+  year: 2026
+  kind: "publication"
+  venue: "ICLR"
+  venue_full: "The Fourteenth International Conference on Learning Representations"
+
+- title: "Finite-Time Analysis of Discrete-Time Stochastic Interpolants"
+  url: "https://proceedings.mlr.press/v267/liu25d.html"
+  authors: ["Yuhao Liu", "Yu Chen", "Rui Hu", "Longbo Huang"]
+  year: 2025
+  kind: "publication"
+  venue: "ICML"
+  venue_full: "Forty-second International Conference on Machine Learning"
+
+- title: "uniINF: Best-of-Both-Worlds Algorithm for Parameter-Free Heavy-Tailed MABs"
+  url: "https://openreview.net/forum?id=2pNLknCTvG"
+  authors: ["Yu Chen*", "Jiatai Huang*", "Yan Dai*", "Longbo Huang"]
+  year: 2025
+  kind: "publication"
+  venue: "ICLR"
+  venue_full: "The Thirteenth International Conference on Learning Representation"
+  distinction: "Spotlight · Top 5%"
+
+- title: "Provable Risk-Sensitive Distributional Reinforcement Learning with General Function Approximation"
+  url: "https://openreview.net/forum?id=0xmfExPqFf"
+  authors: ["Yu Chen*", "Xiangcheng Zhang*", "Siwei Wang", "Longbo Huang"]
+  year: 2024
+  kind: "publication"
+  venue: "ICML"
+  venue_full: "Forty-first International Conference on Machine Learning"
+
+- title: "Provably Efficient Partially Observable Risk-Sensitive Reinforcement Learning with Hindsight Observation"
+  url: "https://openreview.net/forum?id=5S8ukkEQr2"
+  authors: ["Tonghe Zhang*", "Yu Chen*", "Longbo Huang"]
+  year: 2024
+  kind: "publication"
+  venue: "ICML"
+  venue_full: "Forty-first International Conference on Machine Learning"
+
+- title: "Multi-User Delay-Constrained Scheduling With Deep Recurrent Reinforcement Learning"
+  url: "https://ieeexplore.ieee.org/abstract/document/10431724"
+  authors: ["Pihe Hu", "Yu Chen", "Ling Pan", "Zhixuan Fang", "Fu Xiao", "Longbo Huang"]
+  year: 2024
+  kind: "publication"
+  venue: "TON"
+  venue_full: "IEEE/ACM Transactions on Networking"
+
+- title: "Provably Efficient Iterated CVaR Reinforcement Learning with Function Approximation and Human Feedback"
+  url: "https://openreview.net/forum?id=vW1SkPl4kp"
+  authors: ["Yu Chen", "Yihan Du", "Pihe Hu", "Siwei Wang", "Desheng Wu", "Longbo Huang"]
+  year: 2024
+  kind: "publication"
+  venue: "ICLR"
+  venue_full: "The Twelfth International Conference on Learning Representations"
+
+- title: "Towards Minimax Optimal Reward-free Reinforcement Learning in Linear MDPs"
+  url: "https://openreview.net/forum?id=U9HW6vyNClg"
+  authors: ["Pihe Hu*", "Yu Chen*", "Longbo Huang"]
+  year: 2023
+  kind: "publication"
+  venue: "ICLR"
+  venue_full: "The Eleventh International Conference on Learning Representations"
+
+- title: "Effective multi-user delay-constrained scheduling with deep recurrent reinforcement learning"
+  url: "https://dl.acm.org/doi/abs/10.1145/3492866.3549712"
+  authors: ["Pihe Hu", "Ling Pan", "Yu Chen", "Zhixuan Fang", "Longbo Huang"]
+  year: 2022
+  kind: "publication"
+  venue: "MobiHoc"
+  venue_full: "Algorithmic Foundations, and Protocol Design for Mobile Networks and Mobile Computing"
+
+- title: "Nearly Minimax Optimal Reinforcement Learning with Linear Function Approximation"
+  url: "https://proceedings.mlr.press/v162/hu22a.html"
+  authors: ["Pihe Hu", "Yu Chen", "Longbo Huang"]
+  year: 2022
+  kind: "publication"
+  venue: "ICML"
+  venue_full: "Proceedings of the 39th International Conference on Machine Learning"

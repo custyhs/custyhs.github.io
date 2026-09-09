@@ -1,0 +1,30 @@
+---
+layout: compress
+---
+{% include base_path %}
+{% assign site_version = site.time | date: '%s' %}
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js" data-theme="light">
+  <head>
+    <script>{% include academic-theme-init.js %}</script>
+    {% include head.html stylesheet="academic" %}
+    <link rel="icon" href="{{ base_path }}/images/favicon.ico?v={{ site_version }}">
+    <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css?v={{ site_version }}">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    {% include academic-header.html %}
+    <main id="main" class="site-content{% if page.permalink == '/' %} site-content--home{% endif %}">
+      {% unless page.permalink == '/' %}
+      <header class="page-heading"><h1>{{ page.title }}</h1></header>
+      {% endunless %}
+      {{ content }}
+    </main>
+    <footer class="site-footer">
+      <span>&copy; {{ site.time | date: '%Y' }} {{ site.name }}.</span>
+      <span>Built with <a href="https://jekyllrb.com/">Jekyll</a>. Updated {{ site.time | date: '%B %Y' }}.</span>
+    </footer>
+    <script src="{{ base_path }}/assets/js/academic.js?v={{ site_version }}" defer></script>
+  </body>
+</html>

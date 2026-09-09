@@ -1,0 +1,8 @@
+{% assign paper = include.paper %}
+<li class="paper">
+  <article>
+    <h3 class="paper-title"><a href="{{ paper.url }}">{{ paper.title | escape_once }}</a></h3>
+    <p class="paper-authors">{% for author in paper.authors %}{% unless forloop.first %}{% if forloop.last %}, and {% else %}, {% endif %}{% endunless %}{% if author contains 'Yu Chen' %}<strong>{{ author | escape_once }}</strong>{% else %}{{ author | escape_once }}{% endif %}{% endfor %}.</p>
+    <p class="paper-venue"><span title="{{ paper.venue_full | escape_once }}">{% if paper.kind == 'preprint' %}arXiv preprint{% else %}{{ paper.venue }}{% endif %} {{ paper.year }}</span>{% if paper.distinction %}<span class="paper-distinction">{{ paper.distinction }}</span>{% endif %}{% if paper.code %}<a class="paper-code" href="{{ paper.code }}"><i class="fab fa-github" aria-hidden="true"></i> Code</a>{% endif %}</p>
+  </article>
+</li>
