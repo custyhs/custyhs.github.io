@@ -12,6 +12,16 @@
   topics: [llm]
   links:
     - { label: arXiv, url: "https://arxiv.org/abs/2608.19993", kind: arxiv }
+  bibtex: |
+    @misc{chen2026optimalskillselectionllm,
+          title={Optimal Skill Selection for LLM Agents with Provable Bicriteria Guarantees},
+          author={Yu Chen and Ruishuo Chen and Xun Wang and Zhuoran Li and Longbo Huang},
+          year={2026},
+          eprint={2608.19993},
+          archivePrefix={arXiv},
+          primaryClass={cs.AI},
+          url={https://arxiv.org/abs/2608.19993},
+    }
 
 - id: wang2026context
   title: "When Context Returns: Toward Robust Internalization in On-Policy Distillation"
@@ -23,6 +33,16 @@
   topics: [llm]
   links:
     - { label: arXiv, url: "https://arxiv.org/abs/2606.11627", kind: arxiv }
+  bibtex: |
+    @misc{wang2026contextreturnsrobustinternalization,
+          title={When Context Returns: Toward Robust Internalization in On-Policy Distillation},
+          author={Xun Wang and Ruishuo Chen and Zhuoran Li and Yu Chen and Longbo Huang},
+          year={2026},
+          eprint={2606.11627},
+          archivePrefix={arXiv},
+          primaryClass={cs.LG},
+          url={https://arxiv.org/abs/2606.11627},
+    }
 
 - id: chen2026kmax
   title: "On the Sublinear Regret of Continuous K-Max Bandits"
@@ -35,6 +55,22 @@
   links:
     - { label: Paper, url: "https://proceedings.mlr.press/v337/chen26d.html", kind: paper }
     - { label: arXiv, url: "https://arxiv.org/abs/2502.13467", kind: arxiv }
+  bibtex: |
+    @InProceedings{pmlr-v337-chen26d,
+      title = 	 {On the Sublinear Regret of Continuous K-Max Bandits},
+      author =       {Chen, Yu and Wang, Siwei and Huang, Longbo and Chen, Wei},
+      booktitle = 	 {Proceedings of the 42nd Conference on Uncertainty in Artificial Intelligence},
+      pages = 	 {1200--1229},
+      year = 	 {2026},
+      editor = 	 {Perković, Emilija and Malinsky, Daniel},
+      volume = 	 {337},
+      series = 	 {Proceedings of Machine Learning Research},
+      month = 	 {17--21 Aug},
+      publisher =    {PMLR},
+      pdf = 	 {https://raw.githubusercontent.com/mlresearch/v337/main/assets/chen26d/chen26d.pdf},
+      url = 	 {https://proceedings.mlr.press/v337/chen26d.html},
+      abstract = 	 {The $K$-Max combinatorial multi-armed bandit problem arises in applications such as recommendation and distributed decision making, where the reward is determined by the maximum outcome among $K$ selected arms. When outcomes are continuous and only the maximum value together with the winner’s index is observed, this problem introduces unprecedented difficulties including discretization errors, non-deterministic tie-breaking, and severe estimation biases. To overcome these barriers, we introduce DCK-{UCB}, an efficient algorithm combining adaptive discretization with bias-corrected confidence bounds. We prove that DCK-{UCB} achieves a $\widetilde{\mathcal{O}}(T^{3/4})$ regret bound, the first sublinear guarantee in this setting. Numerical experiments show its superior performance over baseline methods. Furthermore, for the specific case of exponential distributions under full-bandit feedback, we propose MLE-Exp algorithm that attains a near-optimal $\widetilde{\mathcal{O}}(\sqrt{T})$ regret bound. This work establishes fundamental theoretical guarantees and provides a powerful algorithmic solution for continuous combinatorial bandits.}
+    }
 
 - id: chen2026bobwmdp
   title: "Best-of-Both-Worlds for Heavy-Tailed Markov Decision Processes"
@@ -47,6 +83,14 @@
   links:
     - { label: Paper, url: "https://openreview.net/forum?id=j6gXeiPJ3z", kind: paper }
     - { label: arXiv, url: "https://arxiv.org/abs/2602.01295", kind: arxiv }
+  bibtex: |
+    @inproceedings{chen2026bobwmdp,
+      title = {Best-of-Both-Worlds for Heavy-Tailed Markov Decision Processes},
+      author = {Yu Chen and Yuhao Liu and Jiatai Huang and Yihan Du and Longbo Huang},
+      booktitle = {Forty-third International Conference on Machine Learning},
+      year = {2026},
+      url = {https://openreview.net/forum?id=j6gXeiPJ3z}
+    }
 
 - id: chen2026powerflow
   title: "PowerFlow: Unlocking the Dual Nature of LLMs via Principled Distribution Matching"
@@ -60,6 +104,14 @@
     - { label: Paper, url: "https://openreview.net/forum?id=m3H7Oexpbx", kind: paper }
     - { label: arXiv, url: "https://arxiv.org/abs/2603.18363", kind: arxiv }
     - { label: Code, url: "https://github.com/Chenruishuo/PowerFlow", kind: code }
+  bibtex: |
+    @inproceedings{chen2026powerflow,
+      title = {PowerFlow: Unlocking the Dual Nature of LLMs via Principled Distribution Matching},
+      author = {Ruishuo Chen and Yu Chen and Zhuoran Li and Longbo Huang},
+      booktitle = {Forty-third International Conference on Machine Learning},
+      year = {2026},
+      url = {https://openreview.net/forum?id=m3H7Oexpbx}
+    }
 
 - id: hu2026actorcritic
   title: "Finite-time Convergence Analysis of Actor-Critic with Evolving Reward"
@@ -72,6 +124,14 @@
   links:
     - { label: Paper, url: "https://openreview.net/forum?id=hocdjAEAIm", kind: paper }
     - { label: arXiv, url: "https://arxiv.org/abs/2510.12334", kind: arxiv }
+  bibtex: |
+    @inproceedings{hu2026actorcritic,
+      title = {Finite-time Convergence Analysis of Actor-Critic with Evolving Reward},
+      author = {Rui Hu and Yu Chen and Longbo Huang},
+      booktitle = {Forty-third International Conference on Machine Learning},
+      year = {2026},
+      url = {https://openreview.net/forum?id=hocdjAEAIm}
+    }
 
 - id: liu2026ode
   title: "Finite-Time Convergence Analysis of ODE-based Generative Models for Stochastic Interpolants"
@@ -83,6 +143,15 @@
   topics: [generative]
   links:
     - { label: Paper, url: "https://openreview.net/forum?id=VCStVrq0BZ", kind: paper }
+    - { label: arXiv, url: "https://arxiv.org/abs/2508.07333", kind: arxiv }
+  bibtex: |
+    @inproceedings{liu2026ode,
+      title = {Finite-Time Convergence Analysis of ODE-based Generative Models for Stochastic Interpolants},
+      author = {Yuhao Liu and Yu Chen and Rui Hu and Longbo Huang},
+      booktitle = {The Fourteenth International Conference on Learning Representations},
+      year = {2026},
+      url = {https://openreview.net/forum?id=VCStVrq0BZ}
+    }
 
 - id: liu2025interpolants
   title: "Finite-Time Analysis of Discrete-Time Stochastic Interpolants"
@@ -95,6 +164,22 @@
   links:
     - { label: Paper, url: "https://proceedings.mlr.press/v267/liu25d.html", kind: paper }
     - { label: arXiv, url: "https://arxiv.org/abs/2502.09130", kind: arxiv }
+  bibtex: |
+    @InProceedings{pmlr-v267-liu25d,
+      title = 	 {Finite-Time Analysis of Discrete-Time Stochastic Interpolants},
+      author =       {Liu, Yuhao and Chen, Yu and Hu, Rui and Huang, Longbo},
+      booktitle = 	 {Proceedings of the 42nd International Conference on Machine Learning},
+      pages = 	 {38119--38143},
+      year = 	 {2025},
+      editor = 	 {Singh, Aarti and Fazel, Maryam and Hsu, Daniel and Lacoste-Julien, Simon and Berkenkamp, Felix and Maharaj, Tegan and Wagstaff, Kiri and Zhu, Jerry},
+      volume = 	 {267},
+      series = 	 {Proceedings of Machine Learning Research},
+      month = 	 {13--19 Jul},
+      publisher =    {PMLR},
+      pdf = 	 {https://raw.githubusercontent.com/mlresearch/v267/main/assets/liu25d/liu25d.pdf},
+      url = 	 {https://proceedings.mlr.press/v267/liu25d.html},
+      abstract = 	 {The stochastic interpolant framework offers a powerful approach for constructing generative models based on ordinary differential equations (ODEs) or stochastic differential equations (SDEs) to transform arbitrary data distributions. However, prior analyses of this framework have primarily focused on the continuous-time setting, assuming perfect solution of the underlying equations. In this work, we present the first discrete-time analysis of the stochastic interpolant framework, where we introduce a innovative discrete-time sampler and derive a finite-time upper bound on its distribution estimation error. Our result provides a novel quantification on how different factors, including the distance between source and target distributions and estimation accuracy, affect the convergence rate and also offers a new principled way to design efficient schedule for convergence acceleration. Finally, numerical experiments are conducted on the discrete-time sampler to corroborate our theoretical findings.}
+    }
 
 - id: chen2025uniinf
   title: "uniINF: Best-of-Both-Worlds Algorithm for Parameter-Free Heavy-Tailed MABs"
@@ -107,6 +192,15 @@
   topics: [heavy-tailed]
   links:
     - { label: Paper, url: "https://openreview.net/forum?id=2pNLknCTvG", kind: paper }
+    - { label: arXiv, url: "https://arxiv.org/abs/2410.03284", kind: arxiv }
+  bibtex: |
+    @inproceedings{chen2025uniinf,
+      title = {uniINF: Best-of-Both-Worlds Algorithm for Parameter-Free Heavy-Tailed MABs},
+      author = {Yu Chen and Jiatai Huang and Yan Dai and Longbo Huang},
+      booktitle = {The Thirteenth International Conference on Learning Representations},
+      year = {2025},
+      url = {https://openreview.net/forum?id=2pNLknCTvG}
+    }
 
 - id: chen2024risk
   title: "Provable Risk-Sensitive Distributional Reinforcement Learning with General Function Approximation"
@@ -118,6 +212,23 @@
   topics: [risk-sensitive, function-approximation]
   links:
     - { label: Paper, url: "https://openreview.net/forum?id=0xmfExPqFf", kind: paper }
+    - { label: arXiv, url: "https://arxiv.org/abs/2402.18159", kind: arxiv }
+  bibtex: |
+    @InProceedings{pmlr-v235-chen24bf,
+      title = 	 {Provable Risk-Sensitive Distributional Reinforcement Learning with General Function Approximation},
+      author =       {Chen, Yu and Zhang, Xiangcheng and Wang, Siwei and Huang, Longbo},
+      booktitle = 	 {Proceedings of the 41st International Conference on Machine Learning},
+      pages = 	 {7748--7791},
+      year = 	 {2024},
+      editor = 	 {Salakhutdinov, Ruslan and Kolter, Zico and Heller, Katherine and Weller, Adrian and Oliver, Nuria and Scarlett, Jonathan and Berkenkamp, Felix},
+      volume = 	 {235},
+      series = 	 {Proceedings of Machine Learning Research},
+      month = 	 {21--27 Jul},
+      publisher =    {PMLR},
+      pdf = 	 {https://raw.githubusercontent.com/mlresearch/v235/main/assets/chen24bf/chen24bf.pdf},
+      url = 	 {https://proceedings.mlr.press/v235/chen24bf.html},
+      abstract = 	 {In the realm of reinforcement learning (RL), accounting for risk is crucial for making decisions under uncertainty, particularly in applications where safety and reliability are paramount. In this paper, we introduce a general framework on Risk-Sensitive Distributional Reinforcement Learning (RS-DisRL), with static Lipschitz Risk Measures (LRM) and general function approximation. Our framework covers a broad class of risk-sensitive RL, and facilitates analysis of the impact of estimation functions on the effectiveness of RSRL strategies and evaluation of their sample complexity. We design two innovative meta-algorithms: RS-DisRL-M, a model-based strategy for model-based function approximation, and RS-DisRL-V, a model-free approach for general value function approximation. With our novel estimation techniques via Least Squares Regression (LSR) and Maximum Likelihood Estimation (MLE) in distributional RL with augmented Markov Decision Process (MDP), we derive the first $\widetilde{\mathcal{O}}(\sqrt{K})$ dependency of the regret upper bound for RSRL with static LRM, marking a pioneering contribution towards statistically efficient algorithms in this domain.}
+    }
 
 - id: zhang2024pomdp
   title: "Provably Efficient Partially Observable Risk-Sensitive Reinforcement Learning with Hindsight Observation"
@@ -129,6 +240,23 @@
   topics: [risk-sensitive]
   links:
     - { label: Paper, url: "https://openreview.net/forum?id=5S8ukkEQr2", kind: paper }
+    - { label: arXiv, url: "https://arxiv.org/abs/2402.18149", kind: arxiv }
+  bibtex: |
+    @InProceedings{pmlr-v235-zhang24g,
+      title = 	 {Provably Efficient Partially Observable Risk-sensitive Reinforcement Learning with Hindsight Observation},
+      author =       {Zhang, Tonghe and Chen, Yu and Huang, Longbo},
+      booktitle = 	 {Proceedings of the 41st International Conference on Machine Learning},
+      pages = 	 {58680--58716},
+      year = 	 {2024},
+      editor = 	 {Salakhutdinov, Ruslan and Kolter, Zico and Heller, Katherine and Weller, Adrian and Oliver, Nuria and Scarlett, Jonathan and Berkenkamp, Felix},
+      volume = 	 {235},
+      series = 	 {Proceedings of Machine Learning Research},
+      month = 	 {21--27 Jul},
+      publisher =    {PMLR},
+      pdf = 	 {https://raw.githubusercontent.com/mlresearch/v235/main/assets/zhang24g/zhang24g.pdf},
+      url = 	 {https://proceedings.mlr.press/v235/zhang24g.html},
+      abstract = 	 {This work pioneers regret analysis of risk-sensitive reinforcement learning in partially observable environments with hindsight observation, addressing a gap in theoretical exploration. We introduce a novel formulation that integrates hindsight observations into a Partially Observable Markov Decision Process (POMDP) framework, where the goal is to optimize accumulated reward under the entropic risk measure. We develop the first provably efficient RL algorithm tailored for this setting. We also prove by rigorous analysis that our algorithm achieves polynomial regret $\tilde{O}\left(\frac{e^{|{\gamma}|H}-1}{|{\gamma}|H}H^2\sqrt{KHS^2OA}\right)$, which outperforms or matches existing upper bounds when the model degenerates to risk-neutral or fully observable settings. We adopt the method of change-of-measure and develop a novel analytical tool of beta vectors to streamline mathematical derivations. These techniques are of particular interest to the theoretical study of reinforcement learning.}
+    }
 
 - id: hu2024ton
   title: "Multi-User Delay-Constrained Scheduling With Deep Recurrent Reinforcement Learning"
@@ -140,6 +268,8 @@
   topics: [scheduling]
   links:
     - { label: Paper, url: "https://ieeexplore.ieee.org/abstract/document/10431724", kind: paper }
+  bibtex: |
+    @article{Hu_2024, title={Multi-User Delay-Constrained Scheduling With Deep Recurrent Reinforcement Learning}, volume={32}, ISSN={1558-2566}, url={http://dx.doi.org/10.1109/tnet.2024.3359911}, DOI={10.1109/tnet.2024.3359911}, number={3}, journal={IEEE/ACM Transactions on Networking}, publisher={Institute of Electrical and Electronics Engineers (IEEE)}, author={Hu, Pihe and Chen, Yu and Pan, Ling and Fang, Zhixuan and Xiao, Fu and Huang, Longbo}, year={2024}, month=June, pages={2344–2359} }
 
 - id: chen2024cvar
   title: "Provably Efficient Iterated CVaR Reinforcement Learning with Function Approximation and Human Feedback"
@@ -151,6 +281,15 @@
   topics: [risk-sensitive, function-approximation]
   links:
     - { label: Paper, url: "https://openreview.net/forum?id=vW1SkPl4kp", kind: paper }
+    - { label: arXiv, url: "https://arxiv.org/abs/2307.02842", kind: arxiv }
+  bibtex: |
+    @inproceedings{chen2024cvar,
+      title = {Provably Efficient Iterated CVaR Reinforcement Learning with Function Approximation and Human Feedback},
+      author = {Yu Chen and Yihan Du and Pihe Hu and Siwei Wang and Desheng Wu and Longbo Huang},
+      booktitle = {The Twelfth International Conference on Learning Representations},
+      year = {2024},
+      url = {https://openreview.net/forum?id=vW1SkPl4kp}
+    }
 
 - id: hu2023rewardfree
   title: "Towards Minimax Optimal Reward-free Reinforcement Learning in Linear MDPs"
@@ -162,6 +301,14 @@
   topics: [function-approximation]
   links:
     - { label: Paper, url: "https://openreview.net/forum?id=U9HW6vyNClg", kind: paper }
+  bibtex: |
+    @inproceedings{hu2023rewardfree,
+      title = {Towards Minimax Optimal Reward-free Reinforcement Learning in Linear MDPs},
+      author = {Pihe Hu and Yu Chen and Longbo Huang},
+      booktitle = {The Eleventh International Conference on Learning Representations},
+      year = {2023},
+      url = {https://openreview.net/forum?id=U9HW6vyNClg}
+    }
 
 - id: hu2022mobihoc
   title: "Effective multi-user delay-constrained scheduling with deep recurrent reinforcement learning"
@@ -173,6 +320,9 @@
   topics: [scheduling]
   links:
     - { label: Paper, url: "https://dl.acm.org/doi/abs/10.1145/3492866.3549712", kind: paper }
+    - { label: arXiv, url: "https://arxiv.org/abs/2208.14074", kind: arxiv }
+  bibtex: |
+    @inproceedings{Hu_2022, series={MobiHoc ’22}, title={Effective multi-user delay-constrained scheduling with deep recurrent reinforcement learning}, url={http://dx.doi.org/10.1145/3492866.3549712}, DOI={10.1145/3492866.3549712}, booktitle={Proceedings of the Twenty-Third International Symposium on Theory, Algorithmic Foundations, and Protocol Design for Mobile Networks and Mobile Computing}, publisher={ACM}, author={Hu, Pihe and Pan, Ling and Chen, Yu and Fang, Zhixuan and Huang, Longbo}, year={2022}, month=Oct, pages={1–10}, collection={MobiHoc ’22} }
 
 - id: hu2022linear
   title: "Nearly Minimax Optimal Reinforcement Learning with Linear Function Approximation"
@@ -184,3 +334,20 @@
   topics: [function-approximation]
   links:
     - { label: Paper, url: "https://proceedings.mlr.press/v162/hu22a.html", kind: paper }
+    - { label: arXiv, url: "https://arxiv.org/abs/2206.11489", kind: arxiv }
+  bibtex: |
+    @InProceedings{pmlr-v162-hu22a,
+      title = 	 {Nearly Minimax Optimal Reinforcement Learning with Linear Function Approximation},
+      author =       {Hu, Pihe and Chen, Yu and Huang, Longbo},
+      booktitle = 	 {Proceedings of the 39th International Conference on Machine Learning},
+      pages = 	 {8971--9019},
+      year = 	 {2022},
+      editor = 	 {Chaudhuri, Kamalika and Jegelka, Stefanie and Song, Le and Szepesvari, Csaba and Niu, Gang and Sabato, Sivan},
+      volume = 	 {162},
+      series = 	 {Proceedings of Machine Learning Research},
+      month = 	 {17--23 Jul},
+      publisher =    {PMLR},
+      pdf = 	 {https://proceedings.mlr.press/v162/hu22a/hu22a.pdf},
+      url = 	 {https://proceedings.mlr.press/v162/hu22a.html},
+      abstract = 	 {We study reinforcement learning with linear function approximation where the transition probability and reward functions are linear with respect to a feature mapping $\boldsymbol{\phi}(s,a)$. Specifically, we consider the episodic inhomogeneous linear Markov Decision Process (MDP), and propose a novel computation-efficient algorithm, LSVI-UCB$^+$, which achieves an $\widetilde{O}(Hd\sqrt{T})$ regret bound where $H$ is the episode length, $d$ is the feature dimension, and $T$ is the number of steps. LSVI-UCB$^+$ builds on weighted ridge regression and upper confidence value iteration with a Bernstein-type exploration bonus. Our statistical results are obtained with novel analytical tools, including a new Bernstein self-normalized bound with conservatism on elliptical potentials, and refined analysis of the correction term. To the best of our knowledge, this is the first minimax optimal algorithm for linear MDPs up to logarithmic factors, which closes the $\sqrt{Hd}$ gap between the best known upper bound of $\widetilde{O}(\sqrt{H^3d^3T})$ in \cite{jin2020provably} and lower bound of $\Omega(Hd\sqrt{T})$ for linear MDPs.}
+    }

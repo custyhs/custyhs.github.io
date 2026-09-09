@@ -22,6 +22,10 @@ Content lives in data files:
   `topics` (slugs from `_data/topics.yml`), `links` (pills: `paper`, `arxiv`, `code`,
   `slides`, `video`),
   optional `bibtex` (enables the BibTeX pill).
+- BibTeX entries: PMLR, IEEE, and ACM papers carry the publisher's entry; the two
+  preprints carry arXiv's entry; ICLR papers and ICML 2026 papers (no PMLR volume at
+  the time of writing) carry an `@inproceedings` assembled from the site's own
+  metadata, so replace those with the official entries when they become available.
 - `_data/topics.yml` – topic slugs and labels; `home: true` topics appear as homepage tags.
 - `_data/news.yml` – homepage news (`when`, Markdown `text`), newest first.
 - `_data/navigation.yml` – header links.
