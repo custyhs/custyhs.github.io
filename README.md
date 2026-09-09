@@ -8,8 +8,8 @@ The site uses one custom Jekyll layout and a small set of partials; the
 AcademicPages templates it was forked from have been removed.
 
 - `_layouts/academic.html` – page shell (header, content column, footer, back-to-top).
-- `_includes/academic-*.html` – header, contact row, topic tags, featured papers,
-  news list, publication entry, publication toolbar, share-card metadata.
+- `_includes/academic-*.html` – header, contact row, topic tags, news list,
+  publication entry, publication toolbar, share-card metadata.
 - `_sass/_academic.scss` – all styles (ink-blue tokens, light and dark themes).
 - `assets/js/academic.js` – theme toggle, topic filter, year jump, BibTeX copy,
   news toggle, back-to-top. Everything degrades to fully visible content without JS.
@@ -19,8 +19,8 @@ Content lives in data files:
 
 - `_data/publications.yml` – one entry per paper: `id`, `title`, `authors`, `year`,
   `kind` (`publication` or `preprint`), `venue`, `venue_full`, optional `note`,
-  `topics` (slugs from `_data/topics.yml`), optional `featured` + `featured_note`
-  (homepage cards), `links` (pills: `paper`, `arxiv`, `code`, `slides`, `video`),
+  `topics` (slugs from `_data/topics.yml`), `links` (pills: `paper`, `arxiv`, `code`,
+  `slides`, `video`),
   optional `bibtex` (enables the BibTeX pill).
 - `_data/topics.yml` – topic slugs and labels; `home: true` topics appear as homepage tags.
 - `_data/news.yml` – homepage news (`when`, Markdown `text`), newest first.

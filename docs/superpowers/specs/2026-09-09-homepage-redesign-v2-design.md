@@ -178,3 +178,7 @@ stylesheet, `assets/css/main.scss`, `assets/js/main.min.js`, `_main.js`,
 - Topic assignments and seeded news wording need the author's review.
 - BibTeX entries are collected from official pages; any generated from metadata are
   marked in the data file.
+
+## Change log
+
+- 2026-09-09: the "Selected papers" card row was removed from the homepage at the author's request; the `featured` fields were dropped from the publication data.

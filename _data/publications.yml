@@ -1,8 +1,7 @@
 # Publications, newest first. Titles, authors, venues, and years follow the list
 # verified on 2026-09-09. Each entry: id (anchor), kind (publication | preprint),
 # venue (left-column label), venue_full, optional note (honours), topics (slugs from
-# _data/topics.yml), optional featured/featured_note (homepage cards), links (pills,
-# in order), optional bibtex (enables the BibTeX pill).
+# _data/topics.yml), links (pills, in order), optional bibtex (enables the BibTeX pill).
 - id: chen2026skill
   title: "Optimal Skill Selection for LLM Agents with Provable Bicriteria Guarantees"
   authors: ["Yu Chen*", "Ruishuo Chen*", "Xun Wang", "Zhuoran Li", "Longbo Huang"]
@@ -106,8 +105,6 @@
   venue_full: "The Thirteenth International Conference on Learning Representations"
   note: "Spotlight, Top 5%"
   topics: [heavy-tailed]
-  featured: true
-  featured_note: "Best-of-both-worlds guarantees for heavy-tailed bandits without knowing the tail parameters."
   links:
     - { label: Paper, url: "https://openreview.net/forum?id=2pNLknCTvG", kind: paper }
 
@@ -119,8 +116,6 @@
   venue: ICML
   venue_full: "Forty-first International Conference on Machine Learning"
   topics: [risk-sensitive, function-approximation]
-  featured: true
-  featured_note: "Risk-sensitive distributional RL with general function approximation."
   links:
     - { label: Paper, url: "https://openreview.net/forum?id=0xmfExPqFf", kind: paper }
 
@@ -165,8 +160,6 @@
   venue: ICLR
   venue_full: "The Eleventh International Conference on Learning Representations"
   topics: [function-approximation]
-  featured: true
-  featured_note: "Minimax-optimal reward-free exploration in linear MDPs."
   links:
     - { label: Paper, url: "https://openreview.net/forum?id=U9HW6vyNClg", kind: paper }
 

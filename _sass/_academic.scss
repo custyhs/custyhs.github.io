@@ -168,30 +168,12 @@ img { display: block; max-width: 100%; }
 .chip:hover, .chip[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
 .chip[aria-pressed="true"] { font-weight: 600; }
 
-/* Home: sections, featured cards, news */
+/* Home: sections, news */
 
 .home-section { margin-top: 44px; }
 .section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; border-bottom: 1px solid var(--line); margin-bottom: 18px; }
 .section-heading .section-label { border-bottom: 0; margin: 0; }
 .section-heading > a { font: 14px/1.4 var(--sans); white-space: nowrap; }
-.featured-cards { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
-.featured-cards li { margin: 0; }
-.card {
-  height: 100%;
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  padding: 16px 16px 14px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  background: var(--paper);
-  transition: border-color .18s ease, box-shadow .18s ease;
-}
-.card:hover { border-color: var(--accent); box-shadow: 0 6px 20px rgba(31, 78, 140, .08); }
-.card-venue { align-self: flex-start; font: 600 11.5px/1 var(--sans); letter-spacing: .06em; text-transform: uppercase; color: var(--accent); background: var(--accent-soft); padding: 5px 8px; border-radius: 4px; }
-.card-title { font-size: 16px; line-height: 1.4; color: var(--ink); font-weight: 700; background: none; }
-.card-title:hover { color: var(--accent); }
-.card-note { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.5; }
 .news-list { list-style: none; margin: 0; padding: 0; }
 .news-list li { display: grid; grid-template-columns: 84px minmax(0, 1fr); column-gap: 14px; padding: 5px 0; margin: 0; line-height: 1.5; font-size: 16px; }
 .news-when { color: var(--muted); font: 13px/1.6 var(--sans); text-align: right; white-space: nowrap; padding-top: 2px; }
@@ -306,7 +288,6 @@ img { display: block; max-width: 100%; }
   .site-header__inner { width: calc(100% - 24px); padding: 0; }
 }
 @media (max-width: 700px) {
-  .featured-cards { grid-template-columns: 1fr; }
   .profile-intro { grid-template-columns: minmax(0, 1fr) 160px; column-gap: 24px; }
   .profile-portrait { width: 160px; height: 160px; }
   .profile-heading h1 { font-size: 38px; }
@@ -350,6 +331,6 @@ img { display: block; max-width: 100%; }
   .site-content { width: 100%; max-width: none; padding: 0; }
   .site-footer { width: 100%; max-width: none; }
   a { background: none; }
-  .pub, .award, .card { break-inside: avoid; }
+  .pub, .award { break-inside: avoid; }
   .pub-bibtex { display: none; }
 }
