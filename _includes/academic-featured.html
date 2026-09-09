@@ -1,0 +1,22 @@
+{%- assign featured = site.data.publications | where: 'featured', true -%}
+{%- if featured.size > 0 %}
+<section class="home-section" aria-labelledby="selected-papers">
+  <div class="section-heading">
+    <h2 class="section-label" id="selected-papers">Selected papers</h2>
+    <a href="{{ site.baseurl }}/publications/">All publications</a>
+  </div>
+  <ul class="featured-cards">
+    {%- for paper in featured %}
+    <li>
+      <article class="card">
+        <span class="card-venue">{{ paper.venue }} {{ paper.year }}{% if paper.note %} &middot; {{ paper.note | split: ',' | first }}{% endif %}</span>
+        <a class="card-title" href="{{ site.baseurl }}/publications/#{{ paper.id }}">{{ paper.title | escape_once }}</a>
+        {%- if paper.featured_note %}
+        <p class="card-note">{{ paper.featured_note | escape_once }}</p>
+        {%- endif %}
+      </article>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+{%- endif %}

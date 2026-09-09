@@ -1,0 +1,14 @@
+{%- assign news = site.data.news -%}
+{%- if news and news.size > 0 %}
+<section class="home-section" aria-labelledby="recent-news">
+  <h2 class="section-label" id="recent-news">Recent news</h2>
+  <ul class="news-list">
+    {%- for item in news %}
+    <li data-index="{{ forloop.index }}"><span class="news-when">{{ item.when }}</span><div class="news-text">{{ item.text | markdownify }}</div></li>
+    {%- endfor %}
+  </ul>
+  {%- if news.size > 6 %}
+  <button class="news-toggle chip" type="button" data-limit="6" aria-expanded="false" hidden>Show all news ({{ news.size }})</button>
+  {%- endif %}
+</section>
+{%- endif %}
