@@ -1,34 +1,58 @@
 ---
 layout: academic
-title: "Selected awards"
+title: "Selected Awards"
 permalink: /awards/
+excerpt: "Selected awards and scholarships received by Yu Chen."
 ---
 
-<p class="page-intro">A selection of research and academic honors.</p>
-
-<section class="publication-group" aria-labelledby="awards-2025">
-  <h2 class="publication-year" id="awards-2025">2025</h2>
-  <ul class="award-list">
-    <li><h3>ICLR Spotlight</h3><p>Top 5% of all submissions. <a href="https://openreview.net/forum?id=2pNLknCTvG">uniINF: Best-of-Both-Worlds Algorithm for Parameter-Free Heavy-Tailed MABs</a>.</p></li>
-  </ul>
-</section>
-<section class="publication-group" aria-labelledby="awards-2024">
-  <h2 class="publication-year" id="awards-2024">2024</h2>
-  <ul class="award-list">
-    <li><h3>China National Scholarship <span lang="zh">(国家奖学金)</span></h3><p>Graduate scholarship awarded by the Ministry of Education of China. Top 2% domestically.</p></li>
-  </ul>
-</section>
-<section class="publication-group" aria-labelledby="awards-2022">
-  <h2 class="publication-year" id="awards-2022">2022</h2>
-  <ul class="award-list">
-    <li><h3>China National Scholarship <span lang="zh">(国家奖学金)</span></h3><p>Undergraduate scholarship awarded by the Ministry of Education of China. Top 2% domestically.</p></li>
-    <li><h3>Xiao Qin Scholarship</h3><p>Department of Mathematics, Tsinghua University. Recognition for the best student of each class.</p></li>
-  </ul>
-</section>
-<section class="publication-group" aria-labelledby="awards-2021">
-  <h2 class="publication-year" id="awards-2021">2020–21</h2>
-  <ul class="award-list">
-    <li><h3>Tsinghua University Scholarship</h3><p>Awarded in 2020 and 2021 for academic and social work.</p></li>
-    <li><h3>First Prize, Beijing Area</h3><p>Contemporary Undergraduate Mathematical Contest in Modeling, 2020.</p></li>
-  </ul>
-</section>
+<ul class="award-list">
+  <li class="award award-research">
+    <span class="year-badge">2025</span><i class="fas fa-trophy" aria-hidden="true"></i>
+    <div>
+      <h3>ICLR 2025 Spotlights</h3>
+      <p><span class="pub-note">Top 5% of all submissions.</span> <a href="https://openreview.net/forum?id=2pNLknCTvG">uniINF: Best-of-Both-Worlds Algorithm for Parameter-Free Heavy-Tailed MABs</a>.</p>
+    </div>
+  </li>
+  <li class="award award-scholarship">
+    <span class="year-badge">2024</span><i class="fas fa-graduation-cap" aria-hidden="true"></i>
+    <div>
+      <h3>China National Scholarship <span lang="zh">(国家奖学金)</span></h3>
+      <p>For graduate student, by Ministry of Education of China, 2024. <span class="pub-note">Top scholarship in China, 2% domestically.</span></p>
+    </div>
+  </li>
+  <li class="award award-scholarship">
+    <span class="year-badge">2022</span><i class="fas fa-graduation-cap" aria-hidden="true"></i>
+    <div>
+      <h3>China National Scholarship <span lang="zh">(国家奖学金)</span></h3>
+      <p>For undergraduate student, by Ministry of Education of China, 2022. <span class="pub-note">Top scholarship in China, 2% domestically.</span></p>
+    </div>
+  </li>
+  <li class="award award-scholarship">
+    <span class="year-badge">2022</span><i class="fas fa-graduation-cap" aria-hidden="true"></i>
+    <div>
+      <h3>Xiao Qin Scholarship</h3>
+      <p>By Department of Mathematics, Tsinghua University, 2022. Recognition for the <span class="pub-note">best student of each class</span> in Department of Mathematics, Tsinghua.</p>
+    </div>
+  </li>
+  <li class="award award-scholarship">
+    <span class="year-badge">2021</span><i class="fas fa-graduation-cap" aria-hidden="true"></i>
+    <div>
+      <h3>Tsinghua University Scholarship</h3>
+      <p>By Tsinghua University, 2021. Recognition for the performance in academic and social work.</p>
+    </div>
+  </li>
+  <li class="award award-scholarship">
+    <span class="year-badge">2020</span><i class="fas fa-graduation-cap" aria-hidden="true"></i>
+    <div>
+      <h3>Tsinghua University Scholarship</h3>
+      <p>By Tsinghua University, 2020. Recognition for the performance in academic and social work.</p>
+    </div>
+  </li>
+  <li class="award award-competition">
+    <span class="year-badge">2020</span><i class="fas fa-flag" aria-hidden="true"></i>
+    <div>
+      <h3>First Prize (Beijing Area)</h3>
+      <p>In Contemporary Undergraduate Mathematical Contest in Modeling, by China Society for Industrial and Applied Mathematics, 2020.</p>
+    </div>
+  </li>
+</ul>

@@ -53,3 +53,9 @@ raise "Expected 5 topic tags, found #{home_tags.length}" unless home_tags.length
 raise 'Fewer than 6 news items' unless home.css('.news-list li[data-index]').length >= 6
 raise 'Contact row should have four links' unless home.css('.contact-links a').length == 4
 puts "home: #{home_cards.length} cards, #{home_tags.length} tags, #{home.css('.news-list li').length} news items"
+
+awards = Nokogiri::HTML(File.read(File.join(root, 'awards/index.html')))
+rows = awards.css('li.award')
+raise "Expected at least 7 award rows, found #{rows.length}" unless rows.length >= 7
+raise 'Award row without year badge, icon, or title' unless rows.all? { |r| r.at_css('.year-badge') && r.at_css('i[aria-hidden]') && r.at_css('h3') }
+puts "awards: #{rows.length} rows with year badges"
