@@ -21,7 +21,7 @@ redirect_from:
     {% include academic-contact.html %}
   </div>
   <figure class="profile-portrait">
-    <img class="author__avatar" src="{{ site.baseurl }}/images/{{ site.author.avatar }}?v={{ site.time | date: '%s' }}" width="214" height="214" alt="Yu Chen" fetchpriority="high">
+    <img class="site-avatar" src="{{ site.baseurl }}/images/{{ site.author.avatar }}?v={{ site.time | date: '%s' }}" width="200" height="200" alt="Portrait of Yu Chen" fetchpriority="high">
   </figure>
 </div>
 

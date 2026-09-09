@@ -1,0 +1,7 @@
+{% include base_path %}
+{% if site.og_image %}
+<meta property="og:image" content="{{ base_path }}/images/{{ site.og_image }}">
+<meta property="og:image:alt" content="{{ site.name }}">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="{{ base_path }}/images/{{ site.og_image }}">
+{% endif %}

@@ -12,7 +12,7 @@ raise 'Invalid build version' unless version.match?(/\A\d{10,14}\z/)
   raise "Version mismatch in #{name}" unless metadata && metadata['content'] == version
   raise "Version endpoint missing in #{name}" unless metadata['data-version-url'].end_with?('/version.json')
 
-  assets = document.css('link[rel="stylesheet"], script[src], img.author__avatar, link[rel="icon"]')
+  assets = document.css('link[rel="stylesheet"], script[src], img.site-avatar, link[rel="icon"]')
   local_assets = assets.select do |tag|
     URI.parse(tag['href'] || tag['src']).path.match?(%r{/(assets|images)/})
   end
@@ -22,8 +22,15 @@ raise 'Invalid build version' unless version.match?(/\A\d{10,14}\z/)
   end
   checker = document.css('script').find { |tag| tag.content.include?('function checkForUpdate') }
   raise "Update checker missing in #{name}" unless checker
+  share = document.at_css('meta[property="og:image"]')
+  raise "Share image missing in #{name}" unless share && share['content'].end_with?('/images/avatar-600.jpg')
   puts "#{name}: matching build version; #{local_assets.length} assets versioned"
 end
+
+home = Nokogiri::HTML(File.read(File.join(root, 'index.html')))
+avatar = home.at_css('img.site-avatar')
+raise 'Avatar missing or unversioned' unless avatar && avatar['src'].include?("v=#{version}")
+puts 'Share image and avatar verified.'
 
 raise 'Tests would be published' if Dir.exist?(File.join(root, 'tests'))
 raise 'Version endpoint in sitemap' if File.read(File.join(root, 'sitemap.xml')).include?('/version.json')
