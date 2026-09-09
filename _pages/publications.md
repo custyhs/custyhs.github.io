@@ -1,37 +1,37 @@
 ---
 layout: academic
-title: "Publications"
+title: "Selected Publications"
 permalink: /publications/
 excerpt: "Selected publications and preprints by Yu Chen."
 ---
 
 <div class="page-intro">
-  <p>Selected papers, listed in reverse chronological order. For the complete list, see <a href="{{ site.author.googlescholar }}">Google Scholar</a>.</p>
+  <p>For a complete list, please refer to my <a href="{{ site.author.googlescholar }}">Google Scholar profile</a>. The publications are listed reverse chronologically.</p>
   <p>* indicates equal contribution.</p>
 </div>
 
+{% include academic-pub-toolbar.html %}
+
+{% assign preprints = site.data.publications | where: 'kind', 'preprint' %}
+{% if preprints.size > 0 %}
 <section class="publication-section" aria-labelledby="preprints">
-  <h2 id="preprints">Preprints</h2>
-  {% assign preprints = site.data.publications | where: 'kind', 'preprint' | group_by: 'year' %}
-  {% for group in preprints %}
-  <div class="publication-group">
-    <h3 class="publication-year">{{ group.name }}</h3>
-    <ul class="paper-list">
-      {% for paper in group.items %}{% include academic-paper.html paper=paper %}{% endfor %}
-    </ul>
-  </div>
-  {% endfor %}
+  <h2 class="section-label" id="preprints">Preprints</h2>
+  <ul class="pub-list">
+    {% for paper in preprints %}{% include academic-paper.html paper=paper %}{% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+{% assign publications = site.data.publications | where: 'kind', 'publication' %}
+<section class="publication-section" aria-labelledby="publications">
+  <h2 class="section-label" id="publications">Publications</h2>
+  <ul class="pub-list">
+    {% assign last_year = 0 %}
+    {% for paper in publications %}
+      {% if paper.year != last_year %}{% assign anchor = paper.year %}{% assign last_year = paper.year %}{% else %}{% assign anchor = false %}{% endif %}
+      {% include academic-paper.html paper=paper anchor=anchor %}
+    {% endfor %}
+  </ul>
 </section>
 
-<section class="publication-section" aria-labelledby="publications">
-  <h2 id="publications">Publications</h2>
-  {% assign publications = site.data.publications | where: 'kind', 'publication' | group_by: 'year' %}
-  {% for group in publications %}
-  <div class="publication-group">
-    <h3 class="publication-year">{{ group.name }}</h3>
-    <ul class="paper-list">
-      {% for paper in group.items %}{% include academic-paper.html paper=paper %}{% endfor %}
-    </ul>
-  </div>
-  {% endfor %}
-</section>
+<p class="pub-empty" data-empty-message hidden>No papers match this topic yet.</p>

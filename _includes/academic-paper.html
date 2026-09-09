@@ -1,8 +1,21 @@
 {% assign paper = include.paper %}
-<li class="paper">
-  <article>
-    <h3 class="paper-title"><a href="{{ paper.url }}">{{ paper.title | escape_once }}</a></h3>
-    <p class="paper-authors">{% for author in paper.authors %}{% unless forloop.first %}{% if forloop.last %}, and {% else %}, {% endif %}{% endunless %}{% if author contains 'Yu Chen' %}<strong>{{ author | escape_once }}</strong>{% else %}{{ author | escape_once }}{% endif %}{% endfor %}.</p>
-    <p class="paper-venue"><span title="{{ paper.venue_full | escape_once }}">{% if paper.kind == 'preprint' %}arXiv preprint{% else %}{{ paper.venue }}{% endif %} {{ paper.year }}</span>{% if paper.distinction %}<span class="paper-distinction">{{ paper.distinction }}</span>{% endif %}{% if paper.code %}<a class="paper-code" href="{{ paper.code }}"><i class="fab fa-github" aria-hidden="true"></i> Code</a>{% endif %}</p>
-  </article>
+<li class="pub" id="{{ paper.id }}" data-year="{{ paper.year }}" data-topics="{{ paper.topics | join: ' ' }}">
+  {% if include.anchor %}<span class="year-anchor" id="year-{{ include.anchor }}"></span>{% endif %}
+  <div class="pub-meta"><span class="pub-venue">{{ paper.venue }}</span><span class="pub-year">{{ paper.year }}</span></div>
+  <div class="pub-body">
+    <p class="pub-title">{{ paper.title | escape_once }}</p>
+    <p class="pub-authors">{% for author in paper.authors %}{% unless forloop.first %}{% if forloop.last %}, and {% else %}, {% endif %}{% endunless %}{% if author contains 'Yu Chen' %}<span class="pub-self">{{ author | escape_once }}</span>{% else %}{{ author | escape_once }}{% endif %}{% endfor %}.</p>
+    <p class="pub-where"><span>{{ paper.venue_full | escape_once }}, {{ paper.year }}.</span>{% if paper.note %} <span class="pub-note">{{ paper.note | escape_once }}</span>{% endif %}</p>
+    <div class="pub-links">
+      {%- for link in paper.links -%}
+      <a class="pill pill-{{ link.kind }}" href="{{ link.url }}"><i class="{% case link.kind %}{% when 'code' %}fab fa-github{% when 'arxiv' %}ai ai-arxiv{% when 'slides' %}fas fa-chalkboard-teacher{% when 'video' %}fas fa-video{% else %}fas fa-file-alt{% endcase %}" aria-hidden="true"></i>{{ link.label }}</a>
+      {%- endfor -%}
+      {%- if paper.bibtex -%}
+      <button class="pill pill-bibtex" type="button" aria-expanded="false" aria-controls="bib-{{ paper.id }}"><i class="fas fa-quote-right" aria-hidden="true"></i>BibTeX</button>
+      {%- endif -%}
+    </div>
+    {%- if paper.bibtex -%}
+    <div class="pub-bibtex" id="bib-{{ paper.id }}" hidden><pre>{{ paper.bibtex | strip | escape_once }}</pre><button class="copy-bibtex" type="button" data-target="bib-{{ paper.id }}">Copy</button></div>
+    {%- endif -%}
+  </div>
 </li>

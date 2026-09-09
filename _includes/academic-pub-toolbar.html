@@ -1,0 +1,21 @@
+{%- assign pubs = site.data.publications -%}
+{%- assign used = "" | split: "" -%}
+{%- for topic in site.data.topics -%}
+  {%- for paper in pubs -%}
+    {%- if paper.topics contains topic.slug -%}{%- assign used = used | push: topic -%}{%- break -%}{%- endif -%}
+  {%- endfor -%}
+{%- endfor -%}
+<div class="pub-toolbar" role="group" aria-label="Filter by topic">
+  <span class="pub-toolbar__label">Topic</span>
+  <button class="chip" type="button" data-topic="all" aria-pressed="true">All</button>
+  {%- for topic in used %}
+  <button class="chip" type="button" data-topic="{{ topic.slug }}" aria-pressed="false">{{ topic.label }}</button>
+  {%- endfor %}
+</div>
+{%- assign years = pubs | where: 'kind', 'publication' | map: 'year' | uniq -%}
+<nav class="year-jump" aria-label="Jump to year">
+  <span>Year</span>
+  {%- for year in years %}
+  <a href="#year-{{ year }}">{{ year }}</a>
+  {%- endfor %}
+</nav>

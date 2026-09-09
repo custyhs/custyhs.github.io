@@ -35,3 +35,12 @@ puts 'Share image and avatar verified.'
 raise 'Tests would be published' if Dir.exist?(File.join(root, 'tests'))
 raise 'Version endpoint in sitemap' if File.read(File.join(root, 'sitemap.xml')).include?('/version.json')
 puts 'Build metadata and asset versions verified.'
+
+pubs = Nokogiri::HTML(File.read(File.join(root, 'publications/index.html')))
+entries = pubs.css('li.pub')
+raise "Expected 16 publication entries, found #{entries.length}" unless entries.length == 16
+raise 'Entry without topics or year' unless entries.all? { |e| e['data-topics'].to_s.strip != '' && e['data-year'].to_s.match?(/\A\d{4}\z/) }
+raise 'Entry without a link pill' unless entries.all? { |e| e.at_css('.pub-links a.pill') }
+raise 'Topic toolbar missing' unless pubs.at_css('.pub-toolbar [data-topic="all"]')
+raise 'Year anchors do not match year links' unless pubs.css('.year-anchor').length == pubs.css('.year-jump a').length
+puts "publications: #{entries.length} entries with topics, years, and links"
