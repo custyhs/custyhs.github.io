@@ -25,7 +25,9 @@ Content lives in data files:
   preprints carry arXiv's entry; ICLR papers and ICML 2026 papers (no PMLR volume at
   the time of writing) carry an `@inproceedings` assembled from the site's own
   metadata, so replace those with the official entries when they become available.
-- `_data/news.yml` – homepage news (`when`, Markdown `text`), newest first.
+- `_data/news.yml` – homepage news (`when`, Markdown `text`), newest first. The news
+  section is currently hidden; re-enable it by restoring the include line noted in
+  `_pages/about.md`.
 - `_data/navigation.yml` – header links.
 
 Local preview (this machine needs the Homebrew Ruby, not the system one):

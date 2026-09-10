@@ -30,7 +30,7 @@ Prior to my Ph.D., I received my Bachelor of Science from Tsinghua University in
 </div>
 </div>
 
-{% include academic-news.html %}
+{% comment %}Recent news is hidden. To show it again, replace this line with: {% include academic-news.html %}{% endcomment %}
 
 <section class="home-section research-interests" aria-labelledby="research-interests" markdown="1">
 <h2 class="section-label" id="research-interests">Research Interests</h2>
