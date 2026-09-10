@@ -18,7 +18,7 @@ redirect_from:
   <img class="site-avatar" src="{{ site.baseurl }}/images/{{ site.author.avatar }}?v={{ site.time | date: '%s' }}" width="200" height="200" alt="Portrait of Yu Chen" fetchpriority="high">
 </figure>
 <div class="profile-copy" markdown="1">
-Hi! My name is Yu Chen (陈禹 in Chinese).
+Hi! My name is Yu Chen.
 
 I am a third-year Ph.D. student at the [Institute for Interdisciplinary Information Sciences (IIIS), Tsinghua University](https://iiis.tsinghua.edu.cn/en), where I am very fortunate to be advised by Prof. [Longbo Huang](https://people.iiis.tsinghua.edu.cn/~huang/index.html). My research focuses on reinforcement learning theory, with a particular interest in robust sequential decision-making under uncertainty.
 
