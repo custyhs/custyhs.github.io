@@ -14,6 +14,9 @@ redirect_from:
 </header>
 
 <div class="profile-intro">
+<figure class="profile-portrait">
+  <img class="site-avatar" src="{{ site.baseurl }}/images/{{ site.author.avatar }}?v={{ site.time | date: '%s' }}" width="200" height="200" alt="Portrait of Yu Chen" fetchpriority="high">
+</figure>
 <div class="profile-copy" markdown="1">
 Hi! My name is Yu Chen (陈禹 in Chinese).
 
@@ -25,9 +28,6 @@ Prior to my Ph.D., I received my Bachelor of Science from Tsinghua University in
 
 {% include academic-contact.html %}
 </div>
-<figure class="profile-portrait">
-  <img class="site-avatar" src="{{ site.baseurl }}/images/{{ site.author.avatar }}?v={{ site.time | date: '%s' }}" width="200" height="200" alt="Portrait of Yu Chen" fetchpriority="high">
-</figure>
 </div>
 
 {% include academic-news.html %}
