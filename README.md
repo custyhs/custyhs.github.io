@@ -11,22 +11,20 @@ AcademicPages templates it was forked from have been removed.
 - `_includes/academic-*.html` – header, contact row, news list, publication entry,
   publication toolbar, share-card metadata.
 - `_sass/_academic.scss` – all styles (ink-blue tokens, light and dark themes).
-- `assets/js/academic.js` – theme toggle, topic filter, year jump, BibTeX copy,
-  news toggle, back-to-top. Everything degrades to fully visible content without JS.
+- `assets/js/academic.js` – theme toggle, BibTeX copy, news toggle, back-to-top.
+  Everything degrades to fully visible content without JS.
 - `_pages/about.md`, `_pages/publications.md`, `_pages/awards.md` – page content.
 
 Content lives in data files:
 
 - `_data/publications.yml` – one entry per paper: `id`, `title`, `authors`, `year`,
   `kind` (`publication` or `preprint`), `venue`, `venue_full`, optional `note`,
-  `topics` (slugs from `_data/topics.yml`), `links` (pills: `paper`, `arxiv`, `code`,
-  `slides`, `video`),
+  `links` (pills: `paper`, `arxiv`, `code`, `slides`, `video`),
   optional `bibtex` (enables the BibTeX pill).
 - BibTeX entries: PMLR, IEEE, and ACM papers carry the publisher's entry; the two
   preprints carry arXiv's entry; ICLR papers and ICML 2026 papers (no PMLR volume at
   the time of writing) carry an `@inproceedings` assembled from the site's own
   metadata, so replace those with the official entries when they become available.
-- `_data/topics.yml` – topic slugs and labels for the publication filter chips.
 - `_data/news.yml` – homepage news (`when`, Markdown `text`), newest first.
 - `_data/navigation.yml` – header links.
 

@@ -2,34 +2,6 @@
   "use strict";
   var root = document.documentElement;
 
-  /* Pure helpers (also unit-tested in tests/academic.test.cjs). */
-  var Academic = {
-    parseTopic: function (search, known) {
-      var match = /[?&]topic=([^&#]+)/.exec(search || "");
-      var value = match ? decodeURIComponent(match[1]) : "all";
-      return known.indexOf(value) === -1 ? "all" : value;
-    },
-    matchesTopic: function (topics, topic) {
-      if (topic === "all") return true;
-      return (" " + (topics || "") + " ").indexOf(" " + topic + " ") !== -1;
-    },
-    visibleIds: function (entries, topic) {
-      var ids = [];
-      for (var i = 0; i < entries.length; i++) {
-        if (Academic.matchesTopic(entries[i].topics, topic)) ids.push(entries[i].id);
-      }
-      return ids;
-    },
-    topicUrl: function (pathname, search, topic) {
-      var params = new URLSearchParams(search || "");
-      params.delete("topic");
-      if (topic !== "all") params.append("topic", topic);
-      var query = params.toString();
-      return pathname + (query ? "?" + query : "");
-    }
-  };
-  window.Academic = Academic;
-
   function each(list, callback) {
     for (var i = 0; i < list.length; i++) callback(list[i], i);
   }
@@ -72,59 +44,6 @@
     updateTop();
     topButton.addEventListener("click", function () {
       window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-  }
-
-  /* Publication topic filter */
-  var toolbar = document.querySelector(".pub-toolbar");
-  if (toolbar) {
-    var chips = toolbar.querySelectorAll("[data-topic]");
-    var known = [];
-    each(chips, function (chip) { known.push(chip.getAttribute("data-topic")); });
-    var entries = document.querySelectorAll("li.pub");
-    var sections = document.querySelectorAll(".publication-section");
-    var emptyMessage = document.querySelector("[data-empty-message]");
-
-    var applyFilter = function (topic, updateUrl) {
-      each(chips, function (chip) {
-        chip.setAttribute("aria-pressed", String(chip.getAttribute("data-topic") === topic));
-      });
-      var anyVisible = false;
-      each(entries, function (entry) {
-        entry.hidden = !Academic.matchesTopic(entry.getAttribute("data-topics"), topic);
-        if (!entry.hidden) anyVisible = true;
-      });
-      each(sections, function (section) {
-        var visible = false;
-        each(section.querySelectorAll("li.pub"), function (entry) { if (!entry.hidden) visible = true; });
-        section.hidden = !visible;
-      });
-      if (emptyMessage) emptyMessage.hidden = anyVisible;
-      if (updateUrl && window.history && window.history.replaceState) {
-        try {
-          window.history.replaceState(window.history.state, "", Academic.topicUrl(window.location.pathname, window.location.search, topic) + window.location.hash);
-        } catch (error) { /* A restricted history API must not break filtering. */ }
-      }
-    };
-
-    applyFilter(Academic.parseTopic(window.location.search, known), false);
-    each(chips, function (chip) {
-      chip.addEventListener("click", function () { applyFilter(chip.getAttribute("data-topic"), true); });
-    });
-
-    /* Year jump: scroll to the first visible entry of that year. */
-    each(document.querySelectorAll(".year-jump a"), function (link) {
-      link.addEventListener("click", function (event) {
-        var year = link.getAttribute("href").replace("#year-", "");
-        var target = null;
-        each(entries, function (entry) {
-          if (!target && !entry.hidden && entry.getAttribute("data-year") === year) target = entry;
-        });
-        if (target) {
-          event.preventDefault();
-          target.scrollIntoView({ behavior: "smooth", block: "start" });
-        }
-      });
     });
   }
 

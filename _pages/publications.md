@@ -34,4 +34,3 @@ excerpt: "Selected publications and preprints by Yu Chen."
   </ul>
 </section>
 
-<p class="pub-empty" data-empty-message hidden>No papers match this topic yet.</p>

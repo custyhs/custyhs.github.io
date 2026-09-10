@@ -1,5 +1,5 @@
 {% assign paper = include.paper %}
-<li class="pub" id="{{ paper.id }}" data-year="{{ paper.year }}" data-topics="{{ paper.topics | join: ' ' }}">
+<li class="pub" id="{{ paper.id }}" data-year="{{ paper.year }}">
   {% if include.anchor %}<span class="year-anchor" id="year-{{ include.anchor }}"></span>{% endif %}
   <div class="pub-meta"><span class="pub-venue">{{ paper.venue }}</span><span class="pub-year">{{ paper.year }}</span></div>
   <div class="pub-body">

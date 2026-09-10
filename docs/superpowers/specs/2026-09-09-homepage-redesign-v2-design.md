@@ -183,3 +183,4 @@ stylesheet, `assets/css/main.scss`, `assets/js/main.min.js`, `_main.js`,
 
 - 2026-09-09: the "Selected papers" card row was removed from the homepage at the author's request; the `featured` fields were dropped from the publication data.
 - 2026-09-10: the homepage topic tag row was removed at the author's request; `_data/topics.yml` now only drives the publication filter.
+- 2026-09-10: the publication topic filter was removed at the author's request; the year navigation stays as plain anchor links and `_data/topics.yml` was deleted.

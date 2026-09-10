@@ -151,7 +151,6 @@ img { display: block; max-width: 100%; }
 .contact-links a:hover { color: var(--accent); }
 .contact-links i { font-size: 17px; color: var(--ink); }
 .contact-links a:hover i { color: var(--accent); }
-.pub-toolbar__label { color: var(--muted); font: 600 12px/1 var(--sans); letter-spacing: .08em; text-transform: uppercase; margin-right: 4px; }
 .chip {
   display: inline-flex;
   align-items: center;
@@ -183,8 +182,7 @@ img { display: block; max-width: 100%; }
 
 /* Publications */
 
-.pub-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 0 0 10px; }
-.year-jump { display: flex; flex-wrap: wrap; gap: 4px 14px; margin: 0 0 28px; font: 13.5px/1.6 var(--sans); }
+.year-jump { display: flex; flex-wrap: wrap; gap: 4px 14px; margin: 4px 0 28px; font: 13.5px/1.6 var(--sans); }
 .year-jump span { color: var(--muted); }
 .publication-section { margin-top: 30px; }
 .pub-list { list-style: none; margin: 0; padding: 0; }
@@ -236,7 +234,6 @@ img { display: block; max-width: 100%; }
 }
 .copy-bibtex { position: absolute; top: 8px; right: 8px; padding: 4px 10px; border: 1px solid var(--line); border-radius: 6px; background: var(--paper); color: var(--accent); font: 500 12px/1.3 var(--sans); cursor: pointer; }
 .copy-bibtex:hover { border-color: var(--accent); }
-.pub-empty { color: var(--muted); font-style: italic; }
 
 /* Awards */
 
@@ -326,7 +323,7 @@ img { display: block; max-width: 100%; }
 }
 @media print {
   :root, :root[data-theme="dark"] { --paper: #fff; --ink: #000; --muted: #444; --accent: #000; --line: #ccc; --hover: #fff; }
-  .site-header, .skip-link, .theme-toggle, .back-to-top, .pub-toolbar, .year-jump, .news-toggle, .copy-bibtex, .pill-bibtex { display: none !important; }
+  .site-header, .skip-link, .theme-toggle, .back-to-top, .year-jump, .news-toggle, .copy-bibtex, .pill-bibtex { display: none !important; }
   .site-content { width: 100%; max-width: none; padding: 0; }
   .site-footer { width: 100%; max-width: none; }
   a { background: none; }

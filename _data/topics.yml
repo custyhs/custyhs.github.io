@@ -1,7 +1,0 @@
-# Research topics used by the publication filter; every topic appears as a filter chip.
-- { slug: heavy-tailed, label: "Heavy-tailed & robust bandits" }
-- { slug: risk-sensitive, label: "Risk-sensitive RL" }
-- { slug: function-approximation, label: "RL with function approximation" }
-- { slug: generative, label: "Generative model theory" }
-- { slug: llm, label: "LLMs & distribution matching" }
-- { slug: scheduling, label: "Scheduling & networking" }

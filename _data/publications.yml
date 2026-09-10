@@ -1,7 +1,7 @@
 # Publications, newest first. Titles, authors, venues, and years follow the list
 # verified on 2026-09-09. Each entry: id (anchor), kind (publication | preprint),
-# venue (left-column label), venue_full, optional note (honours), topics (slugs from
-# _data/topics.yml), links (pills, in order), optional bibtex (enables the BibTeX pill).
+# venue (left-column label), venue_full, optional note (honours), links (pills, in
+# order), optional bibtex (enables the BibTeX pill).
 - id: chen2026skill
   title: "Optimal Skill Selection for LLM Agents with Provable Bicriteria Guarantees"
   authors: ["Yu Chen*", "Ruishuo Chen*", "Xun Wang", "Zhuoran Li", "Longbo Huang"]
@@ -9,7 +9,6 @@
   kind: preprint
   venue: arXiv
   venue_full: "arXiv preprint"
-  topics: [llm]
   links:
     - { label: arXiv, url: "https://arxiv.org/abs/2608.19993", kind: arxiv }
   bibtex: |
@@ -30,7 +29,6 @@
   kind: preprint
   venue: arXiv
   venue_full: "arXiv preprint"
-  topics: [llm]
   links:
     - { label: arXiv, url: "https://arxiv.org/abs/2606.11627", kind: arxiv }
   bibtex: |
@@ -51,7 +49,6 @@
   kind: publication
   venue: UAI
   venue_full: "Forty-Second Annual Conference on Uncertainty in Artificial Intelligence"
-  topics: [heavy-tailed]
   links:
     - { label: Paper, url: "https://proceedings.mlr.press/v337/chen26d.html", kind: paper }
     - { label: arXiv, url: "https://arxiv.org/abs/2502.13467", kind: arxiv }
@@ -79,7 +76,6 @@
   kind: publication
   venue: ICML
   venue_full: "Forty-third International Conference on Machine Learning"
-  topics: [heavy-tailed]
   links:
     - { label: Paper, url: "https://openreview.net/forum?id=j6gXeiPJ3z", kind: paper }
     - { label: arXiv, url: "https://arxiv.org/abs/2602.01295", kind: arxiv }
@@ -99,7 +95,6 @@
   kind: publication
   venue: ICML
   venue_full: "Forty-third International Conference on Machine Learning"
-  topics: [llm]
   links:
     - { label: Paper, url: "https://openreview.net/forum?id=m3H7Oexpbx", kind: paper }
     - { label: arXiv, url: "https://arxiv.org/abs/2603.18363", kind: arxiv }
@@ -120,7 +115,6 @@
   kind: publication
   venue: ICML
   venue_full: "Forty-third International Conference on Machine Learning"
-  topics: [function-approximation]
   links:
     - { label: Paper, url: "https://openreview.net/forum?id=hocdjAEAIm", kind: paper }
     - { label: arXiv, url: "https://arxiv.org/abs/2510.12334", kind: arxiv }
@@ -140,7 +134,6 @@
   kind: publication
   venue: ICLR
   venue_full: "The Fourteenth International Conference on Learning Representations"
-  topics: [generative]
   links:
     - { label: Paper, url: "https://openreview.net/forum?id=VCStVrq0BZ", kind: paper }
     - { label: arXiv, url: "https://arxiv.org/abs/2508.07333", kind: arxiv }
@@ -160,7 +153,6 @@
   kind: publication
   venue: ICML
   venue_full: "Forty-second International Conference on Machine Learning"
-  topics: [generative]
   links:
     - { label: Paper, url: "https://proceedings.mlr.press/v267/liu25d.html", kind: paper }
     - { label: arXiv, url: "https://arxiv.org/abs/2502.09130", kind: arxiv }
@@ -189,7 +181,6 @@
   venue: ICLR
   venue_full: "The Thirteenth International Conference on Learning Representations"
   note: "Spotlight, Top 5%"
-  topics: [heavy-tailed]
   links:
     - { label: Paper, url: "https://openreview.net/forum?id=2pNLknCTvG", kind: paper }
     - { label: arXiv, url: "https://arxiv.org/abs/2410.03284", kind: arxiv }
@@ -209,7 +200,6 @@
   kind: publication
   venue: ICML
   venue_full: "Forty-first International Conference on Machine Learning"
-  topics: [risk-sensitive, function-approximation]
   links:
     - { label: Paper, url: "https://openreview.net/forum?id=0xmfExPqFf", kind: paper }
     - { label: arXiv, url: "https://arxiv.org/abs/2402.18159", kind: arxiv }
@@ -237,7 +227,6 @@
   kind: publication
   venue: ICML
   venue_full: "Forty-first International Conference on Machine Learning"
-  topics: [risk-sensitive]
   links:
     - { label: Paper, url: "https://openreview.net/forum?id=5S8ukkEQr2", kind: paper }
     - { label: arXiv, url: "https://arxiv.org/abs/2402.18149", kind: arxiv }
@@ -265,7 +254,6 @@
   kind: publication
   venue: TON
   venue_full: "IEEE/ACM Transactions on Networking"
-  topics: [scheduling]
   links:
     - { label: Paper, url: "https://ieeexplore.ieee.org/abstract/document/10431724", kind: paper }
   bibtex: |
@@ -278,7 +266,6 @@
   kind: publication
   venue: ICLR
   venue_full: "The Twelfth International Conference on Learning Representations"
-  topics: [risk-sensitive, function-approximation]
   links:
     - { label: Paper, url: "https://openreview.net/forum?id=vW1SkPl4kp", kind: paper }
     - { label: arXiv, url: "https://arxiv.org/abs/2307.02842", kind: arxiv }
@@ -298,7 +285,6 @@
   kind: publication
   venue: ICLR
   venue_full: "The Eleventh International Conference on Learning Representations"
-  topics: [function-approximation]
   links:
     - { label: Paper, url: "https://openreview.net/forum?id=U9HW6vyNClg", kind: paper }
   bibtex: |
@@ -317,7 +303,6 @@
   kind: publication
   venue: MobiHoc
   venue_full: "Algorithmic Foundations, and Protocol Design for Mobile Networks and Mobile Computing"
-  topics: [scheduling]
   links:
     - { label: Paper, url: "https://dl.acm.org/doi/abs/10.1145/3492866.3549712", kind: paper }
     - { label: arXiv, url: "https://arxiv.org/abs/2208.14074", kind: arxiv }
@@ -331,7 +316,6 @@
   kind: publication
   venue: ICML
   venue_full: "Proceedings of the 39th International Conference on Machine Learning"
-  topics: [function-approximation]
   links:
     - { label: Paper, url: "https://proceedings.mlr.press/v162/hu22a.html", kind: paper }
     - { label: arXiv, url: "https://arxiv.org/abs/2206.11489", kind: arxiv }
