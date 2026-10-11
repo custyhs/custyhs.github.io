@@ -1,4 +1,5 @@
 require 'json'
+require 'yaml'
 require 'nokogiri'
 require 'uri'
 
@@ -46,6 +47,21 @@ puts "publications: #{entries.length} entries with years and links"
 
 raise 'Contact row should have four links' unless home.css('.contact-links a').length == 4
 puts "home: news section #{home.at_css('.news-list') ? 'shown' : 'hidden'}"
+
+overview = home.at_css('section.research-overview')
+heading = overview && overview.at_css('h2#research-overview')
+raise 'Research Overview section missing' unless heading && heading.text.strip == 'Research Overview'
+raise 'Old Research Interests heading still present' if home.css('h2').any? { |h| h.text.strip == 'Research Interests' }
+directions = overview.css('p').select { |p| p.at_css('strong') }
+titles = directions.map { |p| p.at_css('strong').text.strip }
+expected_titles = ['Decision-making in LLMs and LLM agents.', 'Heavy-tailed online learning.', 'Risk-sensitive reinforcement learning.']
+raise "Research directions out of order: #{titles.inspect}" unless titles == expected_titles
+research_links = directions.flat_map { |p| p.css('a').map { |a| a['href'] } }
+raise "Expected 8 research links, found #{research_links.length}" unless research_links.length == 8
+primary_links = YAML.load_file(File.join(__dir__, '..', '_data', 'publications.yml')).map { |p| p['links'].first['url'] }
+unknown = research_links.reject { |u| primary_links.include?(u) }
+raise "Research links not matching publication primary links: #{unknown.inspect}" unless unknown.empty?
+puts "research overview: #{titles.length} directions, #{research_links.length} links matching publication data"
 
 awards = Nokogiri::HTML(File.read(File.join(root, 'awards/index.html')))
 rows = awards.css('li.award')
