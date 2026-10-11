@@ -2,7 +2,7 @@
 layout: academic
 permalink: /
 title: "About Me"
-excerpt: "Yu Chen, Ph.D. student at IIIS, Tsinghua University, working on reinforcement learning theory and robust sequential decision-making."
+excerpt: "Yu Chen, Ph.D. student at IIIS, Tsinghua University, working at the intersection of AI and decision-making."
 redirect_from:
   - /about/
   - /about.html
@@ -20,13 +20,11 @@ redirect_from:
 <div class="profile-copy" markdown="1">
 Hi! My name is Yu Chen.
 
-I am a third-year Ph.D. student at the [Institute for Interdisciplinary Information Sciences (IIIS), Tsinghua University](https://iiis.tsinghua.edu.cn/en), where I am very fortunate to be advised by Prof. [Longbo Huang](https://people.iiis.tsinghua.edu.cn/~huang/index.html). My research focuses on reinforcement learning theory, with a particular interest in robust sequential decision-making under uncertainty.
+I am a third-year Ph.D. student at the [Institute for Interdisciplinary Information Sciences (IIIS), Tsinghua University](https://iiis.tsinghua.edu.cn/en), where I am very fortunate to be advised by Prof. [Longbo Huang](https://people.iiis.tsinghua.edu.cn/~huang/index.html). My research lies at the intersection of AI and decision-making: I develop the theory of sequential decision-making under uncertainty, from bandits to reinforcement learning, and study how AI systems such as LLM agents make decisions.
 
-Starting in November 2026, I will be visiting [Caltech](https://www.caltech.edu/) as a visiting student, under the guidance of Prof. [Adam Wierman](https://adamwierman.com/).
+Starting in November 2026, I will be visiting [Caltech](https://www.caltech.edu/) as a visiting student, under the guidance of Prof. [Adam Wierman](https://adamwierman.com/). Previously, I was a research intern at the [MSR Asia Theory Center](https://www.microsoft.com/en-us/research/group/msr-asia-theory-center/publications/) from February to August 2024, under the guidance of [Dr. Wei Chen](https://www.microsoft.com/en-us/research/people/weic/).
 
-I had the great opportunity to work as a research intern at [MSR Asia Theory Center](https://www.microsoft.com/en-us/research/group/msr-asia-theory-center/publications/) from February to August 2024, under the guidance of [Dr. Wei Chen](https://www.microsoft.com/en-us/research/people/weic/).
-
-Prior to my Ph.D., I received my Bachelor of Science from Tsinghua University in Mathematics.
+Prior to my Ph.D., I received my Bachelor of Science in Mathematics from Tsinghua University.
 
 {% include academic-contact.html %}
 </div>
