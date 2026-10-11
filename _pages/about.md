@@ -14,9 +14,12 @@ redirect_from:
 </header>
 
 <div class="profile-intro">
+<div class="profile-side">
 <figure class="profile-portrait">
   <img class="site-avatar" src="{{ site.baseurl }}/images/{{ site.author.avatar }}?v={{ site.time | date: '%s' }}" width="200" height="200" alt="Portrait of Yu Chen" fetchpriority="high">
 </figure>
+{% include academic-contact.html %}
+</div>
 <div class="profile-copy" markdown="1">
 Hi! My name is Yu Chen.
 
@@ -26,7 +29,6 @@ Starting in November 2026, I will be visiting [Caltech](https://www.caltech.edu/
 
 Prior to my Ph.D., I received my Bachelor of Science in Mathematics from Tsinghua University.
 
-{% include academic-contact.html %}
 </div>
 </div>
 

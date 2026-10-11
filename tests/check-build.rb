@@ -45,7 +45,14 @@ raise 'Entry without a link pill' unless entries.all? { |e| e.at_css('.pub-links
 raise 'Year anchors do not match year links' unless pubs.css('.year-anchor').length == pubs.css('.year-jump a').length
 puts "publications: #{entries.length} entries with years and links"
 
-raise 'Contact row should have four links' unless home.css('.contact-links a').length == 4
+contact_nav = home.at_css('.profile-side nav.contact-links')
+raise 'Contact links must sit under the portrait' unless contact_nav && contact_nav['aria-label'] == 'Contact and profiles'
+raise 'Contact links left in the text column' if home.at_css('.profile-copy .contact-links')
+contact = contact_nav.css('a')
+contact_labels = contact.map { |a| a.text.strip }
+raise "Contact links changed: #{contact_labels.inspect}" unless contact_labels == ['Email', 'Google Scholar', 'GitHub', 'CV']
+contact_hrefs = contact.map { |a| a['href'] }
+raise "Contact link targets changed: #{contact_hrefs.inspect}" unless contact_hrefs[0].start_with?('mailto:') && contact_hrefs[1].include?('scholar.google.com') && contact_hrefs[2].include?('github.com/') && contact_hrefs[3].end_with?('/files/CV.pdf')
 puts "home: news section #{home.at_css('.news-list') ? 'shown' : 'hidden'}"
 
 overview = home.at_css('section.research-overview')
