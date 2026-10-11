@@ -50,7 +50,7 @@ A common thread in my work is decision-making in settings where standard practic
 <section class="home-section service-list" aria-labelledby="academic-services" markdown="1">
 <h2 class="section-label" id="academic-services">Academic Services</h2>
 
-- **Conference Reviewing**: NeurIPS; ICLR; ICML;
-- **Journal Reviewing**: Expert Systems With Applications;
+- **Conference Reviewing**: NeurIPS, ICLR, ICML, AISTATS, AAAI
+- **Journal Reviewing**: IEEE Transactions on Mobile Computing, Machine Learning, Expert Systems with Applications
 
 </section>
