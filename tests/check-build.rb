@@ -39,7 +39,9 @@ puts 'Build metadata and asset versions verified.'
 
 pubs = Nokogiri::HTML(File.read(File.join(root, 'publications/index.html')))
 entries = pubs.css('li.pub')
-raise "Expected 16 publication entries, found #{entries.length}" unless entries.length == 16
+raise "Expected 18 publication entries, found #{entries.length}" unless entries.length == 18
+excluded_titles = ['FAITH: Factuality Alignment through Integrating Trustworthiness and Honestness', 'Towards Stability and Utility Maximization in Adversarial Quantum Networks']
+raise 'An excluded work is listed on the publications page' if excluded_titles.any? { |t| pubs.text.downcase.include?(t.downcase) }
 raise 'Entry without year' unless entries.all? { |e| e['data-year'].to_s.match?(/\A\d{4}\z/) }
 raise 'Entry without a link pill' unless entries.all? { |e| e.at_css('.pub-links a.pill') }
 raise 'Year anchors do not match year links' unless pubs.css('.year-anchor').length == pubs.css('.year-jump a').length

@@ -1,7 +1,48 @@
 # Publications, newest first. Titles, authors, venues, and years follow the list
-# verified on 2026-09-09. Each entry: id (anchor), kind (publication | preprint),
+# verified on 2026-09-09; the two September 2026 preprints were added on 2026-10-11
+# after checking Google Scholar, arXiv, and the PDFs. Each entry: id (anchor), kind (publication | preprint),
 # venue (left-column label), venue_full, optional note (honours), links (pills, in
 # order), optional bibtex (enables the BibTeX pill).
+- id: chen2026margin
+  title: "One Proposal for Every Margin: Zero-Shot Amortized Sequential Importance Sampling for Binary Matrices"
+  authors: ["Ruishuo Chen", "Weijia Li", "Xun Wang", "Yu Chen", "Leheng Cai", "Longbo Huang"]
+  year: 2026
+  kind: preprint
+  venue: arXiv
+  venue_full: "arXiv preprint"
+  links:
+    - { label: arXiv, url: "https://arxiv.org/abs/2609.35514", kind: arxiv }
+  bibtex: |
+    @misc{chen2026proposalmarginzeroshotamortized,
+          title={One Proposal for Every Margin: Zero-Shot Amortized Sequential Importance Sampling for Binary Matrices},
+          author={Ruishuo Chen and Weijia Li and Xun Wang and Yu Chen and Leheng Cai and Longbo Huang},
+          year={2026},
+          eprint={2609.35514},
+          archivePrefix={arXiv},
+          primaryClass={cs.LG},
+          url={https://arxiv.org/abs/2609.35514},
+    }
+
+- id: chen2026router
+  title: "The Router Within: Eliciting Native Skill Routing from a Frozen LLM"
+  authors: ["Ruishuo Chen", "Xun Wang", "Yu Chen", "Zhuoran Li", "Longbo Huang"]
+  year: 2026
+  kind: preprint
+  venue: arXiv
+  venue_full: "arXiv preprint"
+  links:
+    - { label: arXiv, url: "https://arxiv.org/abs/2609.15982", kind: arxiv }
+  bibtex: |
+    @misc{chen2026routerwithinelicitingnative,
+          title={The Router Within: Eliciting Native Skill Routing from a Frozen LLM},
+          author={Ruishuo Chen and Xun Wang and Yu Chen and Zhuoran Li and Longbo Huang},
+          year={2026},
+          eprint={2609.15982},
+          archivePrefix={arXiv},
+          primaryClass={cs.LG},
+          url={https://arxiv.org/abs/2609.15982},
+    }
+
 - id: chen2026skill
   title: "Optimal Skill Selection for LLM Agents with Provable Bicriteria Guarantees"
   authors: ["Yu Chen*", "Ruishuo Chen*", "Xun Wang", "Zhuoran Li", "Longbo Huang"]
