@@ -10,12 +10,6 @@
       {%- for link in paper.links -%}
       <a class="pill pill-{{ link.kind }}" href="{{ link.url }}"><i class="{% case link.kind %}{% when 'code' %}fab fa-github{% when 'arxiv' %}ai ai-arxiv{% when 'slides' %}fas fa-chalkboard-teacher{% when 'video' %}fas fa-video{% else %}fas fa-file-alt{% endcase %}" aria-hidden="true"></i>{{ link.label }}</a>
       {%- endfor -%}
-      {%- if paper.bibtex -%}
-      <button class="pill pill-bibtex" type="button" aria-expanded="false" aria-controls="bib-{{ paper.id }}"><i class="fas fa-quote-right" aria-hidden="true"></i>BibTeX</button>
-      {%- endif -%}
     </div>
-    {%- if paper.bibtex -%}
-    <div class="pub-bibtex" id="bib-{{ paper.id }}" hidden><pre>{{ paper.bibtex | strip | escape_once }}</pre><button class="copy-bibtex" type="button" data-target="bib-{{ paper.id }}">Copy</button></div>
-    {%- endif -%}
   </div>
 </li>

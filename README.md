@@ -11,7 +11,7 @@ AcademicPages templates it was forked from have been removed.
 - `_includes/academic-*.html` – header, contact row, news list, publication entry,
   publication toolbar, share-card metadata.
 - `_sass/_academic.scss` – all styles (ink-blue tokens, light and dark themes).
-- `assets/js/academic.js` – theme toggle, BibTeX copy, news toggle, back-to-top.
+- `assets/js/academic.js` – theme toggle, news toggle, back-to-top.
   Everything degrades to fully visible content without JS.
 - `_pages/about.md`, `_pages/publications.md`, `_pages/awards.md` – page content.
 
@@ -19,12 +19,13 @@ Content lives in data files:
 
 - `_data/publications.yml` – one entry per paper: `id`, `title`, `authors`, `year`,
   `kind` (`publication` or `preprint`), `venue`, `venue_full`, optional `note`,
-  `links` (pills: `paper`, `arxiv`, `code`, `slides`, `video`),
-  optional `bibtex` (enables the BibTeX pill).
-- BibTeX entries: PMLR, IEEE, and ACM papers carry the publisher's entry; the two
-  preprints carry arXiv's entry; ICLR papers and ICML 2026 papers (no PMLR volume at
-  the time of writing) carry an `@inproceedings` assembled from the site's own
-  metadata, so replace those with the official entries when they become available.
+  `links` (pills: `paper`, `arxiv`, `code`, `slides`, `video`).
+- Venue pills: the first link of a peer-reviewed paper (`kind: paper`) is labelled by
+  the page it opens: `Proceedings` (PMLR, ICLR proceedings, ACM Digital Library),
+  `Journal` (journal pages), or `OpenReview`. The build check enforces this. When
+  PMLR publishes ICML 2026, point the three ICML 2026 papers to PMLR, relabel them
+  `Proceedings`, and update the PowerFlow and Heavy-Tailed MDPs links in the
+  Research Overview, which must equal each paper's first link.
 - `_data/news.yml` – homepage news (`when`, Markdown `text`), newest first. The news
   section is currently hidden; re-enable it by restoring the include line noted in
   `_pages/about.md`.

@@ -45,7 +45,15 @@ raise 'An excluded work is listed on the publications page' if excluded_titles.a
 raise 'Entry without year' unless entries.all? { |e| e['data-year'].to_s.match?(/\A\d{4}\z/) }
 raise 'Entry without a link pill' unless entries.all? { |e| e.at_css('.pub-links a.pill') }
 raise 'Year anchors do not match year links' unless pubs.css('.year-anchor').length == pubs.css('.year-jump a').length
-puts "publications: #{entries.length} entries with years and links"
+raise 'BibTeX markup still on the publications page' if pubs.at_css('.pill-bibtex, .pub-bibtex, .copy-bibtex')
+venue_labels = { 'proceedings.mlr.press' => 'Proceedings', 'proceedings.iclr.cc' => 'Proceedings', 'dl.acm.org' => 'Proceedings', 'ieeexplore.ieee.org' => 'Journal', 'openreview.net' => 'OpenReview' }
+pubs.css('section[aria-labelledby="publications"] li.pub').each do |entry|
+  pill = entry.at_css('.pub-links a.pill')
+  expected = venue_labels[URI.parse(pill['href']).host]
+  raise "Venue pill of #{entry['id']} reads #{pill.text.strip.inspect}, expected #{expected.inspect}" unless expected && pill.text.strip == expected
+end
+raise 'A preprint shows a venue pill' if pubs.css('section[aria-labelledby="preprints"] li.pub .pub-links a.pill').any? { |a| venue_labels.value?(a.text.strip) }
+puts "publications: #{entries.length} entries with years and links; venue pills match their targets"
 
 contact_nav = home.at_css('.profile-side nav.contact-links')
 raise 'Contact links must sit under the portrait' unless contact_nav && contact_nav['aria-label'] == 'Contact and profiles'

@@ -47,46 +47,6 @@
     });
   }
 
-  /* BibTeX toggle and copy */
-  each(document.querySelectorAll(".pill-bibtex[aria-controls]"), function (toggle) {
-    toggle.addEventListener("click", function () {
-      var panel = document.getElementById(toggle.getAttribute("aria-controls"));
-      if (!panel) return;
-      var open = panel.hidden;
-      panel.hidden = !open;
-      toggle.setAttribute("aria-expanded", String(open));
-    });
-  });
-  each(document.querySelectorAll(".copy-bibtex[data-target]"), function (copy) {
-    copy.addEventListener("click", function () {
-      var panel = document.getElementById(copy.getAttribute("data-target"));
-      var pre = panel && panel.querySelector("pre");
-      if (!pre) return;
-      var text = pre.textContent;
-      var done = function () {
-        var label = copy.textContent;
-        copy.textContent = "Copied";
-        setTimeout(function () { copy.textContent = label; }, 1500);
-      };
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(text).then(done, function () { fallbackCopy(text, done); });
-      } else {
-        fallbackCopy(text, done);
-      }
-    });
-  });
-  function fallbackCopy(text, done) {
-    var area = document.createElement("textarea");
-    area.value = text;
-    area.setAttribute("readonly", "");
-    area.style.position = "fixed";
-    area.style.top = "-1000px";
-    document.body.appendChild(area);
-    area.select();
-    try { document.execCommand("copy"); done(); } catch (error) { /* Clipboard unavailable. */ }
-    document.body.removeChild(area);
-  }
-
   /* News: show a limited number of items until expanded. */
   var newsToggle = document.querySelector(".news-toggle");
   if (newsToggle) {
